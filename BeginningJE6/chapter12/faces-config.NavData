@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="ex11/newBook.xhtml" x="650" y="300" zoom="true"/>
+        <Node id="ex12/newBook.xhtml" x="150" y="450" zoom="true"/>
+        <Node id="ex13/newBook.xhtml" x="400" y="450" zoom="true"/>
+        <Node id="ex09/newBook.xhtml" x="150" y="150" zoom="true"/>
+        <Node id="ex14/newBook.xhtml" x="650" y="150" zoom="true"/>
+        <Node id="ex13/listBooks.xhtml" x="900" y="300" zoom="true"/>
+        <Node id="ex12/listBooks.xhtml" x="150" y="300" zoom="true"/>
+        <Node id="ex14/newBookJS.xhtml" x="900" y="150" zoom="true"/>
+        <Node id="ex06/newBook.xhtml" x="400" y="300" zoom="true"/>
+        <Node id="index.xhtml" x="650" y="450" zoom="true"/>
+        <Node id="partial-response.xml" x="400" y="150" zoom="true"/>
+        <Node id="ex09/listBooks.xhtml" x="150" y="600" zoom="false"/>
+        <Node id="ex06/listBooks.xhtml" x="1150" y="150" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>

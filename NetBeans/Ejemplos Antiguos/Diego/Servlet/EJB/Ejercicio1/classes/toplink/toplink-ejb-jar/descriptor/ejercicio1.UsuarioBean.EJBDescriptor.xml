@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<descriptor>
+   <unique-filename>ejercicio1.UsuarioBean.EJBDescriptor</unique-filename>
+   <active>true</active>
+   <bldr-class>ejercicio1.UsuarioBean</bldr-class>
+   <mappings>
+      <mapping>
+         <inherited>false</inherited>
+         <instance-variable-name>_context</instance-variable-name>
+         <mapping-class>MWUnmappedMapping</mapping-class>
+      </mapping>
+      <mapping>
+         <inherited>false</inherited>
+         <instance-variable-name>clave</instance-variable-name>
+         <default-field-names>
+            <default-field-name>direct field=</default-field-name>
+         </default-field-names>
+         <uses-method-accessing>false</uses-method-accessing>
+         <read-only>false</read-only>
+         <get-method-handle>
+            <method-handle/>
+         </get-method-handle>
+         <set-method-handle>
+            <method-handle/>
+         </set-method-handle>
+         <direct-mapping-field-handle>
+            <field-handle>
+               <field-table>CURSO1.USUARIO</field-table>
+               <field-name>CLAVE</field-name>
+            </field-handle>
+         </direct-mapping-field-handle>
+         <mapping-class>MWDirectToFieldMapping</mapping-class>
+      </mapping>
+      <mapping>
+         <inherited>false</inherited>
+         <instance-variable-name>usuario</instance-variable-name>
+         <default-field-names>
+            <default-field-name>direct field=</default-field-name>
+         </default-field-names>
+         <uses-method-accessing>false</uses-method-accessing>
+         <read-only>false</read-only>
+         <get-method-handle>
+            <method-handle/>
+         </get-method-handle>
+         <set-method-handle>
+            <method-handle/>
+         </set-method-handle>
+         <direct-mapping-field-handle>
+            <field-handle>
+               <field-table>CURSO1.USUARIO</field-table>
+               <field-name>USUARIO</field-name>
+            </field-handle>
+         </direct-mapping-field-handle>
+         <mapping-class>MWDirectToFieldMapping</mapping-class>
+      </mapping>
+   </mappings>
+   <uses-sequencing>false</uses-sequencing>
+   <conform-results-in-unit-of-work>true</conform-results-in-unit-of-work>
+   <primary-key-field-handles>
+      <field-handle>
+         <field-table>CURSO1.USUARIO</field-table>
+         <field-name>USUARIO</field-name>
+      </field-handle>
+   </primary-key-field-handles>
+   <primary-table>CURSO1.USUARIO</primary-table>
+   <associated-tables>
+      <associated-table>
+         <name>CURSO1.USUARIO</name>
+      </associated-table>
+   </associated-tables>
+   <sequence-number-field-handle>
+      <field-handle/>
+   </sequence-number-field-handle>
+   <class-descriptor-query-manager>
+      <query-manager>
+         <descriptor-alias>Usuario</descriptor-alias>
+         <query-list>
+            <query>
+               <name>findAll</name>
+               <query-type>oracle.toplink.queryframework.ReadAllQuery</query-type>
+               <cache-usage>Conform Results in Unit of Work</cache-usage>
+               <lock-mode>Do Not Acquire Locks</lock-mode>
+               <distinct-state>Uncomputed Distinct</distinct-state>
+               <in-memory-query-indirection-policy>Throw Indirection Exception</in-memory-query-indirection-policy>
+               <cache-query-results>false</cache-query-results>
+               <maintain-cache>true</maintain-cache>
+               <refresh-identity-map-result>false</refresh-identity-map-result>
+               <refresh-remote-identity-map-result>false</refresh-remote-identity-map-result>
+               <use-wrapper-policy>true</use-wrapper-policy>
+               <prepare>true</prepare>
+               <query-timeout>0</query-timeout>
+               <maximum-rows>0</maximum-rows>
+               <format>
+                  <query-format>
+                     <query-string>select object(o) from Usuario o</query-string>
+                     <query-format-class>MWEJBQLQueryFormat</query-format-class>
+                  </query-format>
+               </format>
+            </query>
+            <query>
+               <name>findByPrimaryKey</name>
+               <query-type>oracle.toplink.queryframework.ReadObjectQuery</query-type>
+               <cache-usage>Conform Results in Unit of Work</cache-usage>
+               <lock-mode>Do Not Acquire Locks</lock-mode>
+               <distinct-state>Uncomputed Distinct</distinct-state>
+               <in-memory-query-indirection-policy>Throw Indirection Exception</in-memory-query-indirection-policy>
+               <cache-query-results>false</cache-query-results>
+               <maintain-cache>true</maintain-cache>
+               <refresh-identity-map-result>false</refresh-identity-map-result>
+               <refresh-remote-identity-map-result>false</refresh-remote-identity-map-result>
+               <use-wrapper-policy>true</use-wrapper-policy>
+               <prepare>true</prepare>
+               <query-timeout>0</query-timeout>
+               <maximum-rows>0</maximum-rows>
+               <format>
+                  <query-format>
+                     <query-format-class>MWAutoGeneratedQueryFormat</query-format-class>
+                  </query-format>
+               </format>
+               <parameter-list>
+                  <query-parameter>
+                     <name>primaryKey</name>
+                     <type>java.lang.String</type>
+                  </query-parameter>
+               </parameter-list>
+            </query>
+         </query-list>
+      </query-manager>
+   </class-descriptor-query-manager>
+   <ejb-name>Usuario</ejb-name>
+   <primary-key-class-name>java.lang.String</primary-key-class-name>
+   <remote-home-interface-name>ejercicio1.UsuarioHome</remote-home-interface-name>
+   <remote-interface-name>ejercicio1.Usuario</remote-interface-name>
+   <local-home-interface-name>ejercicio1.UsuarioLocalHome</local-home-interface-name>
+   <local-interface-name>ejercicio1.UsuarioLocal</local-interface-name>
+   <descriptor-class>MWEjbDescriptor</descriptor-class>
+</descriptor>

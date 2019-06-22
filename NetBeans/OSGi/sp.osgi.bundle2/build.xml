@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="deploy" name="build">
+	<property name="base" value=".." />
+
+	<property name="plugin.name.b2" value="sp.osgi.bundle2" />
+	<property name="plugin.version.b2" value="1.0.0" />
+	<property name="base.b2" value="${base}/${plugin.name.b2}" />
+	<property name="src.b2" value="${base.b2}/src" />
+	<property name="output.classes.b2" value="${base.b2}/bin" />
+	<property name="output.jar.b2" value="${base.b2}/export" />
+	<property name="jar.name.b2" value="${output.jar.b2}/${plugin.name.b2}_${plugin.version.b2}.jar" />
+
+	<target name="compile.b2">
+		<mkdir dir="${output.classes.b2}" />
+		<javac srcdir="${src.b2}" destdir="${output.classes.b2}" debug="off" />
+	</target>
+
+	<target name="jar.b2" depends="compile.b2">
+		<delete file="${jar.name.b2}" failonerror="false" />
+		<mkdir dir="${output.jar.b2}" />
+		<zip destfile="${jar.name.b2}">
+			<fileset dir="${output.classes.b2}">
+				<include name="**/*.class" />
+			</fileset>
+			<fileset dir="${base.b2}">
+				<include name="**/MANIFEST.MF" />
+			</fileset>
+		</zip>
+	</target>
+
+	<target name="deploy" depends="jar.b2">
+		<copy file="${jar.name.b2}" todir="../runtime-ejemplo1" />
+	</target>
+
+</project>

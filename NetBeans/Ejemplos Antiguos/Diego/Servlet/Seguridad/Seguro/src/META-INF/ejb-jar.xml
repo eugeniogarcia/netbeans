@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<ejb-jar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/ejb-jar_2_1.xsd" version="2.1" xmlns="http://java.sun.com/xml/ns/j2ee">
+  <enterprise-beans>
+    <session>
+      <description>Session Bean ( Stateless )</description>
+      <display-name>Info</display-name>
+      <ejb-name>Info</ejb-name>
+      <home>seguro.InfoHome</home>
+      <remote>seguro.Info</remote>
+      <local-home>seguro.InfoLocalHome</local-home>
+      <local>seguro.InfoLocal</local>
+      <ejb-class>seguro.InfoBean</ejb-class>
+      <session-type>Stateless</session-type>
+      <transaction-type>Container</transaction-type>
+    </session>
+  </enterprise-beans>
+  <assembly-descriptor>
+    <security-role>
+      <role-name>administrador</role-name>
+    </security-role>
+    <security-role>
+      <role-name>usuario</role-name>
+    </security-role>
+    <method-permission>
+      <role-name>administrador</role-name>
+      <role-name>usuario</role-name>
+      <method>
+        <ejb-name>Info</ejb-name>
+        <method-name>*</method-name>
+      </method>
+      <method>
+        <ejb-name>Info</ejb-name>
+        <method-name>suma</method-name>
+        <method-params>
+          <method-param>int</method-param>
+          <method-param>int</method-param>
+        </method-params>
+      </method>
+    </method-permission>
+  </assembly-descriptor>
+</ejb-jar>

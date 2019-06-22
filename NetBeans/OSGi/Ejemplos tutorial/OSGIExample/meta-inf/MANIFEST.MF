@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-Name: HelloWorld
+Bundle-SymbolicName: HelloWorld
+Bundle-Version: 1.0.0
+Bundle-Description: Demostración de un Bundle
+Bundle-Vendor: MySelf Corp.
+Bundle-Activator: de.vpe.simplebundle.impl.Activator
+Bundle-Category: Ejemplos
+Import-Package: org.osgi.framework

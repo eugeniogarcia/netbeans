@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datosTabla>
+    <imagen1>D:/Documents and Settings/t610908/Genesys/web/img/cab_logo.gif</imagen1>
+    <imagen2>D:/Documents and Settings/t610908/Genesys/web/img/cab_logo.gif</imagen2>
+    <fechaImpresion>12/03/2007</fechaImpresion>
+    <desglose>HORA</desglose>
+    <seleccion>
+        <filaSeleccion>
+            <parametro>
+                <nombre>Fechas: </nombre>
+                <valor>03/03/2007 - 05/03/2007</valor>
+            </parametro>
+            <parametro>
+                <nombre>Periodo Horario: </nombre>
+                <valor>null - null</valor></parametro>
+        </filaSeleccion>
+        <filaSeleccion>
+            <parametro>
+                <nombre>Territorio Origen: </nombre>
+                <valor>Todos</valor>
+            </parametro>
+            <parametro>
+                <nombre>Provincia Origen: </nombre>
+                <valor>Todos</valor>
+            </parametro>
+        </filaSeleccion>
+        <filaSeleccion>
+            <parametro>
+                <nombre>Territorio Destino: </nombre>
+                <valor>Todos</valor>
+            </parametro>
+            <parametro>
+                <nombre>Provincia Destino: </nombre>
+                <valor>Todos</valor>
+            </parametro>
+        </filaSeleccion>
+        <filaSeleccion>
+            <parametro>
+                <nombre>Centros de Operacion: </nombre>
+                <valor/>
+            </parametro>
+            <parametro>
+                <nombre>Puestos: </nombre>
+                <valor/>
+            </parametro>
+        </filaSeleccion>
+        <filaSeleccion>
+            <parametro>
+                <nombre>Tratamientos: </nombre>
+                <valor>Todos</valor>
+            </parametro>
+            <parametro>
+                <nombre>Grupos de Especialista: </nombre>
+                <valor>Todos</valor>
+            </parametro>
+        </filaSeleccion>
+        <filaSeleccion>
+            <parametro>
+                <nombre>Plataformas: </nombre>
+                <valor>Todos</valor>
+            </parametro>
+        </filaSeleccion>
+        <filaSeleccion>
+            <parametro>
+                <nombre>Areas: </nombre>
+                <valor>Todos</valor>
+            </parametro>
+            <parametro>
+                <nombre>Segmentos: </nombre>
+                <valor>Todos</valor>
+            </parametro>
+        </filaSeleccion>
+    </seleccion>
+    <tabla>
+        <fila>
+            <columna>0.0</columna>
+            <columna>10.0</columna>
+            <columna>20.0</columna>
+            <columna>10.0</columna>
+            <columna>5.0</columna>
+            <columna>6.0</columna>
+            <columna>8.0</columna>
+            <columna>9.0</columna>
+            <columna>10.0</columna>
+            <columna>50.0</columna>
+            <columna>90.0</columna>
+            <columna>100.0</columna>
+            <columna>75.0</columna>            
+            <columna>75.0</columna>            
+            <columna>75.0</columna>            
+        </fila>
+        <fila>
+            <columna>0.0</columna>
+            <columna>58.0</columna>
+            <columna>98.0</columna>
+            <columna>98.0</columna>
+            <columna>98.0</columna>
+            <columna>4665645.0</columna>
+            <columna>25.0</columna>
+            <columna>65.0</columna>
+            <columna>65.0</columna>
+            <columna>65.0</columna>
+            <columna>25.0</columna>
+            <columna>32.0</columna>
+            <columna>32.0</columna>
+            <columna>2.0</columna>            
+            <columna>2.0</columna>            
+        </fila>
+        <fila>
+            <columna>0.0</columna>
+            <columna>56.0</columna>
+            <columna>3.0</columna>
+            <columna>1564.0</columna>
+            <columna>6.0</columna>
+            <columna>456.0</columna>
+            <columna>45.0</columna>
+            <columna>65.0</columna>
+            <columna>32.0</columna>
+            <columna>5.0</columna>
+            <columna>3.0</columna>
+            <columna>34.0</columna>
+            <columna>45.0</columna>
+            <columna>52.0</columna>            
+            <columna>52.0</columna>
+        </fila>
+        <total>
+            <columna>0.0</columna>
+            <columna>124.0</columna>
+            <columna>121.0</columna>
+            <columna>1672.0</columna>
+            <columna>109.0</columna>
+            <columna>4666107.0</columna>
+            <columna>78.0</columna>
+            <columna>139.0</columna>
+            <columna>107.0</columna>
+            <columna>120.0</columna>
+            <columna>118.0</columna>
+            <columna>166.0</columna>
+            <columna>152.0</columna>
+            <columna>112.0</columna>            
+            <columna>112.0</columna>
+        </total>
+    </tabla>
+    <tabla2> 
+        <fila>
+            <columna>Tabla2</columna>
+            <columna>10.0</columna>
+            <columna>20.0</columna>
+            <columna>10.0</columna>
+            <columna>5.0</columna>
+            <columna>6.0</columna>
+            <columna>8.0</columna>
+            <columna>9.0</columna>
+            <columna>10.0</columna>
+            <columna>50.0</columna>
+            <columna>90.0</columna>
+            <columna>100.0</columna>
+            <columna>75.0</columna>            
+            <columna>75.0</columna>            
+            <columna>75.0</columna>            
+            <columna>75.0</columna>            
+            <columna>75.0</columna>            
+        </fila>
+        <total>
+            <columna>0.0</columna>
+            <columna>124.0</columna>
+            <columna>121.0</columna>
+            <columna>1672.0</columna>
+            <columna>109.0</columna>
+            <columna>4666107.0</columna>
+            <columna>78.0</columna>
+            <columna>139.0</columna>
+            <columna>107.0</columna>
+            <columna>120.0</columna>
+            <columna>118.0</columna>
+            <columna>166.0</columna>
+            <columna>152.0</columna>
+            <columna>112.0</columna>            
+            <columna>112.0</columna>            
+            <columna>112.0</columna>            
+            <columna>112.0</columna>            
+        </total>
+    </tabla2>
+</datosTabla>

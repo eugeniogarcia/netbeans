@@ -1,0 +1,243 @@
+<html xmlns:j2ee="http://java.sun.com/xml/ns/j2ee" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>panelPopup
+          (ICEfaces Custom Components)
+        </title>
+<meta name="keywords" content="$title">
+<link rel="stylesheet" type="text/css" href="../stylesheet.css" title="Style">
+</head>
+<script>
+            function asd()
+            {
+            parent.document.title="panelPopup (ICEfaces Custom Components)";
+            }
+          </script>
+<body bgcolor="white" onload="asd();">
+<a name="navbar_top"></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td COLSPAN="3" BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><a NAME="navbar_top_firstrow"></a>
+<table BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<tr ALIGN="center" VALIGN="top">
+<td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="tld-summary.html"><font CLASS="NavBarFont1"><b>Library</b></font></a>&nbsp;</td><td BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Tag&nbsp;</font>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ALIGN="right" VALIGN="top" ROWSPAN="3"><em></em></td>
+</tr>
+<tr>
+<td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2"></font></td><td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2">
+                &nbsp;<a HREF="../index.html" TARGET="_top"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a href="panelPopup.html" target="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a HREF="../alltags-noframe.html" TARGET=""><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<h2>
+<font size="-1">ICEfaces Component Suite</font>
+<br>
+            Tag panelPopup</h2>
+<hr>
+      <p>The panelPopup is a container component that renders a window or panel that hovers on
+            top of a web page. The popupPanel contains 2 regions which are defined using facets.
+            The facet names are; header and body.<br>
+            The panelPopup component can be used to provide a general popup window behavior such as moveable/dragable, resizeable and modal<br>
+            Note: A panelPopup facet needs a container type component as a child (e.g.,
+            panelGroup or panelGrid). panelGroup renders a span tag, which doesn't
+            work properly if using Mozilla. panelGrid can be used to avoid display problems. 
+    <br>
+<p></p>
+<hr>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="2"><font size="+2"><b>Tag Information</b></font></td>
+</tr>
+<tr>
+<td>Tag Class</td><td>com.icesoft.faces.component.panelpopup.PanelPopupTag</td>
+</tr>
+<tr>
+<td>TagExtraInfo Class</td><td><i>None</i></td>
+</tr>
+<tr>
+<td>Body Content</td><td>JSP</td>
+</tr>
+<tr>
+<td>Display Name</td><td><i>None</i></td>
+</tr>
+</table>
+<br>
+<p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="5"><font size="+2"><b>Attributes</b></font></td>
+</tr>
+<tr>
+<td><b>Name</b></td><td><b>Required</b></td><td><b>Request-time</b></td><td><b>Type</b></td><td><b>Description</b></td>
+</tr>
+<tr valign="top">
+<td>autoCentre</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		Used to keep the popup centred on the screen through scrolling
+		and window resizing events.
+      </td>
+</tr>
+<tr valign="top">
+<td>autoPosition</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		Used to keep the popup positioned on the screen through
+		scrolling events. Use a string of x and y px values (e.g.
+		autoPostion="35,200").
+      </td>
+</tr>
+<tr valign="top">
+<td>binding</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        The value binding expression linking this component to a property in a backing bean
+      </td>
+</tr>
+<tr valign="top">
+<td>clientOnly</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        Sends update to the server on drop event if false.
+        Default value is false.
+      </td>
+</tr>
+<tr valign="top">
+<td>draggable</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		When set to 'true' this panel is draggable. The user will be
+		able to drag the panel to any position on the page. Note: all
+		Draggable panels must be contained in a form.
+      </td>
+</tr>
+<tr valign="top">
+<td>effect</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        The Javascript Effect
+      </td>
+</tr>
+<tr valign="top">
+<td>id</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+  			The component identifier for this component. This value must be 
+  			unique within the closest parent component that is a naming 
+  			container.
+      </td>
+</tr>
+<tr valign="top">
+<td>modal</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		Used to render a modal popup. Note: this will only cover the
+		body of a document. Make sure the document body takes up 100% of
+		the window. For example: <html><body><div
+		style="height=100%;witdh:100%;"><div></body></html>
+      </td>
+</tr>
+<tr valign="top">
+<td>rendered</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+  			Flag indicating whether or not this component should be rendered 
+  			(during Render Response Phase), or processed on any subsequent form 
+  			submit.
+      </td>
+</tr>
+<tr valign="top">
+<td>renderedOnUserRole</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+
+		If user is in given role, this component will be rendered
+		normally. If not, nothing is rendered and the body of this tag
+		will be skipped.
+      </td>
+</tr>
+<tr valign="top">
+<td>resizable</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        Used to render a resizable popup.
+      </td>
+</tr>
+<tr valign="top">
+<td>style</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		CSS style(s) to be applied when this component is rendered.
+      </td>
+</tr>
+<tr valign="top">
+<td>styleClass</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        <p>
+		Space-separated list of CSS style class(es) to be applied when this 
+		element is rendered. This value must be passed through as the "class" 
+		attribute on generated markup.
+		</p>
+        <p>Defines the base class name for all style classes.
+        Default value is <b>icePnlPop</b></p>
+              </p><ul>
+                <li>icePnlPop</li>
+                <li>icePnlPopHdr</li>
+                <li>icePnlPopBody</li>
+                <li>icePnlPopFtr</li>
+              </ul>              
+      </td>
+</tr>
+<tr valign="top">
+<td>title</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		Advisory title information about markup elements generated for
+		this component.
+      </td>
+</tr>
+<tr valign="top">
+<td>visible</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		Set the visibility of this component. When false CSS style is
+		set to display:none
+      </td>
+</tr>
+</table>
+<br>
+<p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="5"><font size="+2"><b>Variables</b></font></td>
+</tr>
+<td colspan="2"><i>No Variables Defined.</i></td>
+</table>
+<br>
+<p></p>
+<a name="navbar_bottom"></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td COLSPAN="3" BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><a NAME="navbar_bottom_firstrow"></a>
+<table BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<tr ALIGN="center" VALIGN="top">
+<td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="tld-summary.html"><font CLASS="NavBarFont1"><b>Library</b></font></a>&nbsp;</td><td BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Tag&nbsp;</font>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ALIGN="right" VALIGN="top" ROWSPAN="3"><em></em></td>
+</tr>
+<tr>
+<td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2"></font></td><td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2">
+                &nbsp;<a HREF="../index.html" TARGET="_top"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a href="panelPopup.html" target="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a HREF="../alltags-noframe.html" TARGET=""><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<small><i>
+            Output Generated by 
+            <a href="http://taglibrarydoc.dev.java.net/" target="_blank">Tag Library Documentation Generator</a>.
+            Java, JSP, and JavaServer Pages are trademarks or 
+            registered trademarks of Sun Microsystems, Inc. in the US and other
+            countries.  Copyright 2002-4 Sun Microsystems, Inc.
+            4150 Network Circle
+            Santa Clara, CA 95054, U.S.A.
+            All Rights Reserved. 
+            </i></small>
+</body>
+</html>

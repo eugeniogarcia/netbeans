@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Created-By: 1.6.0_23-b05 (Sun Microsystems Inc.)
+Extension-List: jar-1 jar-2 
+jar-1-Extension-Name: invocaEJB.jar
+jar-2-Extension-Name: derbyclient.jar
+

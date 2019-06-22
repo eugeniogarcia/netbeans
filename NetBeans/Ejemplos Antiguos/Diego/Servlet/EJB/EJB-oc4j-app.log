@@ -1,0 +1,88 @@
+07/05/09 13:58:25.85 10.1.3.0.0 Started
+07/05/09 16:18:46.157 10.1.3.0.0 Started
+07/05/09 16:18:56.972 10.1.3.0.0 Started
+07/05/09 16:19:01.88 EJB-Ejercicio1-webapp: 10.1.3.0.0 Started
+07/05/09 16:20:36.626 10.1.3.0.0 Started
+07/05/09 16:20:40.531 EJB-Ejercicio1-webapp: 10.1.3.0.0 Started
+07/05/09 16:20:56.935 EJB-Ejercicio1-webapp: 10.1.3.0.0 Stopped
+07/05/09 16:20:57.456 10.1.3.0.0 Started
+07/05/09 16:21:13.48 10.1.3.0.0 Started
+07/05/09 16:21:16.583 EJB-Ejercicio1-webapp: 10.1.3.0.0 Started
+07/05/09 16:22:20.996 10.1.3.0.0 Started
+07/05/09 16:22:42.46 10.1.3.0.0 Started
+07/05/09 16:22:45.992 EJB-Ejercicio1-webapp: 10.1.3.0.0 Started
+07/05/09 16:23:47.350 EJB-Ejercicio1-webapp: 10.1.3.0.0 Stopped
+07/05/09 16:23:47.721 10.1.3.0.0 Started
+07/05/09 16:23:51.286 EJB-Ejercicio1-webapp: 10.1.3.0.0 Started
+07/05/09 16:24:32.795 EJB-Ejercicio1-webapp: 10.1.3.0.0 Stopped
+07/05/09 16:24:33.186 10.1.3.0.0 Started
+07/05/09 16:24:37.92 EJB-Ejercicio1-webapp: 10.1.3.0.0 Started
+07/05/09 16:25:25.361 10.1.3.0.0 Started
+07/05/09 16:25:41.154 10.1.3.0.0 Started
+07/05/09 16:25:44.979 EJB-Ejercicio1-webapp: 10.1.3.0.0 Started
+07/05/09 16:27:05.615 10.1.3.0.0 Started
+07/05/09 16:27:36.800 10.1.3.0.0 Started
+07/05/09 16:27:40.996 EJB-Ejercicio1-webapp: 10.1.3.0.0 Started
+07/05/09 16:27:43.920 EJB-Ejercicio1-webapp: Servlet error
+java.lang.NullPointerException
+	at ejercicio1.s1.doPost(s1.java:49)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:763)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:856)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:719)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:376)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.doProcessRequest(HttpRequestHandler.java:870)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.processRequest(HttpRequestHandler.java:451)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.serveOneRequest(HttpRequestHandler.java:218)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:119)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:112)
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run(ServerSocketReadHandler.java:260)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:595)
+07/05/09 16:28:22.616 EJB-Ejercicio1-webapp: 10.1.3.0.0 Stopped
+07/05/09 16:28:22.876 10.1.3.0.0 Started
+07/05/09 16:28:26.762 EJB-Ejercicio1-webapp: 10.1.3.0.0 Started
+07/05/09 16:28:29.996 EJB-Ejercicio1-webapp: Servlet error
+java.lang.NullPointerException
+	at ejercicio1.s1.doPost(s1.java:48)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:763)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:856)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:719)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:376)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.doProcessRequest(HttpRequestHandler.java:870)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.processRequest(HttpRequestHandler.java:451)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.serveOneRequest(HttpRequestHandler.java:218)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:119)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:112)
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run(ServerSocketReadHandler.java:260)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:595)
+07/05/09 16:29:31.425 10.1.3.0.0 Started
+07/05/09 16:29:37.914 EJB-Ejercicio1-webapp: 10.1.3.0.0 Started
+07/05/09 16:33:22.387 10.1.3.0.0 Started
+07/05/09 16:33:38.39 10.1.3.0.0 Started
+07/05/09 16:33:41.855 EJB-Ejercicio1-webapp: 10.1.3.0.0 Started
+07/05/09 16:33:45.460 EJB-Ejercicio1-webapp: Servlet error
+java.lang.NullPointerException
+	at ejercicio1.s1.doPost(s1.java:48)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:763)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:856)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:719)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:376)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.doProcessRequest(HttpRequestHandler.java:870)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.processRequest(HttpRequestHandler.java:451)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.serveOneRequest(HttpRequestHandler.java:218)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:119)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:112)
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run(ServerSocketReadHandler.java:260)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:595)
+07/05/09 16:44:49.915 10.1.3.0.0 Started
+07/05/09 16:50:46.578 10.1.3.0.0 Started
+07/05/09 16:51:18.715 10.1.3.0.0 Started
+07/05/09 16:51:32.434 EJB-Ejercicio1-webapp: 10.1.3.0.0 Started
+07/05/09 16:52:48.884 EJB-Ejercicio1-webapp: 10.1.3.0.0 Stopped
+07/05/09 16:52:49.375 10.1.3.0.0 Started
+07/05/09 16:53:02.924 EJB-Ejercicio1-webapp: 10.1.3.0.0 Started
+07/05/09 16:55:39.960 EJB-Ejercicio1-webapp: 10.1.3.0.0 Stopped
+07/05/09 16:55:40.461 10.1.3.0.0 Started
+07/05/09 16:55:54.381 EJB-Ejercicio1-webapp: 10.1.3.0.0 Started

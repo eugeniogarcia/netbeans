@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<orion-ejb-jar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xmlns.oracle.com/oracleas/schema/orion-ejb-jar-10_0.xsd" schema-major-version="10" schema-minor-version="0">
+    <enterprise-beans>
+        <persistence-manager name="toplink">
+            <pm-properties>
+                <default-mapping db-table-gen="UseExisting"/>
+            </pm-properties>
+        </persistence-manager>
+        <session-deployment name="Info"/>
+        <entity-deployment name="Usuario" data-source="jdbc/CursoDS"
+                           table="CURSO1.USUARIO">
+            <primkey-mapping>
+                <cmp-field-mapping name="usuario" persistence-name="USUARIO"
+                                   persistence-type="VARCHAR2(400)"/>
+            </primkey-mapping>
+            <cmp-field-mapping name="usuario" persistence-name="USUARIO"
+                               persistence-type="VARCHAR2(400)"/>
+            <cmp-field-mapping name="clave" persistence-name="CLAVE"
+                               persistence-type="VARCHAR2(400)"/>
+        </entity-deployment>
+    </enterprise-beans>
+</orion-ejb-jar>

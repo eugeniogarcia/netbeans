@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-Name: HolaSolop
+Bundle-SymbolicName: HolaSolop
+Bundle-Version: 1.0.0
+Bundle-Description: Bundle que cada 5 segundos imprime mensaje Solop
+Bundle-Vendor: Revista Sólo Programadores
+Bundle-Activator: es.solop.holasolopbundle.impl.Activator
+Bundle-Category: example
+Import-Package: org.osgi.framework

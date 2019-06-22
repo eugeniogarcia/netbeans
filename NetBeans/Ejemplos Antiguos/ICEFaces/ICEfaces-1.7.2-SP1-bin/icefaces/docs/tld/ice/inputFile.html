@@ -1,0 +1,445 @@
+<html xmlns:j2ee="http://java.sun.com/xml/ns/j2ee" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>inputFile
+          (ICEfaces Custom Components)
+        </title>
+<meta name="keywords" content="$title">
+<link rel="stylesheet" type="text/css" href="../stylesheet.css" title="Style">
+</head>
+<script>
+            function asd()
+            {
+            parent.document.title="inputFile (ICEfaces Custom Components)";
+            }
+          </script>
+<body bgcolor="white" onload="asd();">
+<a name="navbar_top"></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td COLSPAN="3" BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><a NAME="navbar_top_firstrow"></a>
+<table BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<tr ALIGN="center" VALIGN="top">
+<td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="tld-summary.html"><font CLASS="NavBarFont1"><b>Library</b></font></a>&nbsp;</td><td BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Tag&nbsp;</font>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ALIGN="right" VALIGN="top" ROWSPAN="3"><em></em></td>
+</tr>
+<tr>
+<td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2"></font></td><td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2">
+                &nbsp;<a HREF="../index.html" TARGET="_top"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a href="inputFile.html" target="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a HREF="../alltags-noframe.html" TARGET=""><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<h2>
+<font size="-1">ICEfaces Component Suite</font>
+<br>
+            Tag inputFile</h2>
+<hr>
+      <p>The inputFile component renders an file input HTML element. Users specify a file to upload
+            either by entering the path to a file directly, or by  clicking the  <b> Browse </b>  button
+            to open a file-system navigation dialog window.  Clicking the  <b> Upload </b>  button uploads
+            the specified file to the server.<br>
+            The inputFile component can be used to provide a user-specified file upload capability.<br>
+            Note: The inputFile component must render itself inside a form with its encode type set to 
+            "multipart/form-data". This limitation prevents using the inputFile component inside another form. <br>
+            Note: The web.xml parameter com.icesoft.faces.uploadDirectoryAbsolute when set to true will use 
+            the value of the com.icesoft.faces.uploadDirectory parameter as an absolute directory.<br>
+            Note: If the styleClass, buttonClass or the inputTextClass need to be set, then the css file
+            must be referenced using the ice:outputStyle component.<br/>
+            Note: In order to set the height and width of this component, it is recomended to use the height and the width
+            attribute of this component instead of setting it using the style or styleClass. This is due to 
+            the rendering of an iframe.
+    <br>
+<p></p>
+<hr>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="2"><font size="+2"><b>Tag Information</b></font></td>
+</tr>
+<tr>
+<td>Tag Class</td><td>com.icesoft.faces.component.inputfile.InputFileTag</td>
+</tr>
+<tr>
+<td>TagExtraInfo Class</td><td><i>None</i></td>
+</tr>
+<tr>
+<td>Body Content</td><td>JSP</td>
+</tr>
+<tr>
+<td>Display Name</td><td><i>None</i></td>
+</tr>
+</table>
+<br>
+<p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="5"><font size="+2"><b>Attributes</b></font></td>
+</tr>
+<tr>
+<td><b>Name</b></td><td><b>Required</b></td><td><b>Request-time</b></td><td><b>Type</b></td><td><b>Description</b></td>
+</tr>
+<tr valign="top">
+<td>accept</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		 Passed through to root element. 
+      </td>
+</tr>
+<tr valign="top">
+<td>accesskey</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		Access key that, when pressed, transfers focus to this element.
+      </td>
+</tr>
+<tr valign="top">
+<td>action</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		MethodBinding representing the application action to invoke when
+		this component is activated by the user. The expression must
+		evaluate to a either a String or a public method that takes no
+		parameters, and returns a String (the logical outcome) which is
+		passed to the NavigationHandler for this application.
+      </td>
+</tr>
+<tr valign="top">
+<td>actionListener</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		MethodBinding representing an action listener method that will be 
+		notified when this component is activated by the user. The expression 
+		must evaluate to a public method that takes an ActionEvent parameter, 
+		with a return type of void. 
+      </td>
+</tr>
+<tr valign="top">
+<td>binding</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        The value binding expression linking this component to a property in a backing bean
+      </td>
+</tr>
+<tr valign="top">
+<td>buttonClass</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        style class for the submit button.
+      </td>
+</tr>
+<tr valign="top">
+<td>disabled</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+			 Flag indicating that this element must never receive focus or be 
+			 included in a subsequent submit.
+      </td>
+</tr>
+<tr valign="top">
+<td>enabledOnUserRole</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		If user is in given role, this component will be rendered
+		normally. If not, the component will be in disabled state.
+      </td>
+</tr>
+<tr valign="top">
+<td>file</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        Bean property that will be a reference to the uploaded file.
+        Note: This is deprecated. Instead you should use actionListener,
+        and when in the callback method, call InputFile.getFileInfo(),
+        which will give you information on both successful and failed
+        file upload attempts.
+      </td>
+</tr>
+<tr valign="top">
+<td>fileNamePattern</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		The name of the file being uploaded must conform with this pattern. The regular 
+		expression can be use to define the valid file name to be uploaded.<br>
+		If the file name does not match with the pattern, the file will not be 
+		uploaded and an actionEvent and an exception would be fired and thrown
+		respectively.
+		<pre>
+		public void action(ActionEvent event) {
+             InputFile inputFile = (InputFile) event.getSource();
+		     if (inputFile.getStatus() == InputFile.INVALID) {
+                inputFile.getFileInfo().getException().printStackTrace();
+             }
+        }
+        </pre>
+        The default pattern is set to <b>".+"</b> for any name lenght > 0. Let say
+        to allow only .pdf files to be uploaded the pattern would be <b>".+\.pdf"</b><br/>
+      </td>
+</tr>
+<tr valign="top">
+<td>height</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        height of the component.
+      </td>
+</tr>
+<tr valign="top">
+<td>id</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+  			The component identifier for this component. This value must be 
+  			unique within the closest parent component that is a naming 
+  			container.
+      </td>
+</tr>
+<tr valign="top">
+<td>immediate</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+
+		Flag indicating that this component's value must be converted
+		and validated immediately (that is, during Apply Request Values
+		phase), rather than waiting until Process Validations phase.
+      </td>
+</tr>
+<tr valign="top">
+<td>inputTextClass</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        style class for the inputText.
+      </td>
+</tr>
+<tr valign="top">
+<td>inputTextSize</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        size of the input text.
+      </td>
+</tr>
+<tr valign="top">
+<td>label</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        Text that will appear on the submit button.
+      </td>
+</tr>
+<tr valign="top">
+<td>onblur</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		Javascript code executed when this element loses focus.
+      </td>
+</tr>
+<tr valign="top">
+<td>onchange</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		Javascript code executed when this element loses focus and its value 
+		has been modified since gaining focus.
+      </td>
+</tr>
+<tr valign="top">
+<td>onfocus</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		Javascript code executed when this element receives focus.
+      </td>
+</tr>
+<tr valign="top">
+<td>progressListener</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		<p>
+		MethodBinding representing a progress listener method that will be notify 
+		the application on the percentage of the file being uploaded. The expression 
+		must evaluate to a public method that takes a single parameter of type 
+		com.icesoft.faces.component.inputfile.InputFileProgressEvent, with a return type of void.
+		</p>
+		<p>
+       These are some things to consider when implementing the progressListener. 
+		<ul>
+			<li>Beans which implement the progressListener must be in session scope. </li>
+			<li>The PersistentFacesState must be set in the constructor of session bean. </li>
+			<li>The progressListener method may invoke the executeAndRender() call on the PersistentFacesState instance, or may use the OnDemandRenderer, in order to render the page. </li>
+			<li>The progressListener method must take a single argument of type com.icesoft.faces.component.inputfile.InputFileProgressEvent. </li>
+			<li>From the InputFileProgressEvent's getComponent() or getSource() methods, developers may attain a reference to the InputFile component. </li>
+			<li>If the progressListener is being invoked due to the inputFile causing a form submit (refer to the <b>submitOnUpload</b> attribute), then the InputFile's FileInfo object's isPreUpload() or isPostUpload() method will return true, depending if the form post is from before or after the file upload. </li>
+		</ul>
+		</p>
+      </td>
+</tr>
+<tr valign="top">
+<td>progressRender</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        <p>Historically, when the inputFile's current file upload was progressing,  
+        and the <b>progressListener</b> was invoked, the <b>progressListener</b>'s bean 
+        would implement <b>com.icesoft.faces.async.render.Renderable</b>, and use the 
+        <b>com.icesoft.faces.async.render.RenderManager</b> in conjunction with the 
+        <b>com.icesoft.faces.async.render.OnDemandRenderer</b>, to do a server push, 
+        to update the view in the browser with the current progress.</p>
+        <p>But now, you can just set <b>progressRender="true"</b>, and the server 
+        push will happen for you, without setting up all that glue code in the bean. 
+        You still have to set your <b>outputProgress</b> component's progress percent 
+        in the bean via the <b>progressListener</b>, and you have to enabled asynchronous 
+        mode, by setting the <b>com.icesoft.faces.synchronousUpdate</b> context parameter 
+        to false.</p>
+        <p>Note: The default value is false.</p>
+      </td>
+</tr>
+<tr valign="top">
+<td>rendered</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+  			Flag indicating whether or not this component should be rendered 
+  			(during Render Response Phase), or processed on any subsequent form 
+  			submit.
+      </td>
+</tr>
+<tr valign="top">
+<td>renderedOnUserRole</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+
+		If user is in given role, this component will be rendered
+		normally. If not, nothing is rendered and the body of this tag
+		will be skipped.
+      </td>
+</tr>
+<tr valign="top">
+<td>style</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		CSS style(s) to be applied when this component is rendered.
+      </td>
+</tr>
+<tr valign="top">
+<td>styleClass</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+                <p>
+              Space-separated list of CSS style class(es) to be applied when this
+              element is rendered. This value must be passed through as the 
+              "class" attribute on generated markup.<br/>
+              Default value is <b>iceInpFile</b>.<br/>        
+              Style classes used, if enabled:
+                     <ul>
+                       <li>iceInpFile</li>
+                       <li>iceInpFileBtn</li>
+                       <li>iceInpFileTxt</li>                      
+                     </ul>
+              if disabled
+                     <ul>
+                       <li>iceInpFile-dis</li>
+                       <li>iceInpFileBtn-dis</li>
+                       <li>iceInpFileTxt-dis</li>                      
+                     </ul>  
+              </p>       
+      </td>
+</tr>
+<tr valign="top">
+<td>submitOnUpload</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        <p>Depending on the value of <b>submitOnUpload</b>, the inputFile may post its 
+        enclosing form, before and/or after the file upload occurs. Possible values are:</p>
+        <dl>
+        <dt>none</dt>
+        <dd>File uploading will not cause the inputFile's enclosing form, and any other of the form fields, to be submitted to the server.</dd>
+        <dt>preUpload</dt>
+        <dd>The inputFile's enclosing form, and any other of the form fields, will be submitted to the server, immediately before the file uploading begins.</dd>
+        <dt>postUpload</dt>
+        <dd>The inputFile's enclosing form, and any other of the form fields, will be submitted to the server, immediately after the file uploading finishes.</dd>
+        <dt>preAndPostUpload</dt>
+        <dd>The inputFile's enclosing form, and any other of the form fields, will be submitted to the server, both before and after the file uploading takes place.</dd>
+        </dl>        
+        <p>This is to support two different use cases. Applications running in synchronous 
+        mode can not make use of server push, so to depict the beginning and the ending 
+        of the file upload requires browser initiated JSF lifecycles, accomplished via 
+        form submissions. As well, for some applications, it's desirable to submit other 
+        form fields when the user clicks on the file upload button, so that they may be 
+        processed together with the uploaded file.</p>
+        <p>Note: The default value is <b>none</b>.</p>
+      </td>
+</tr>
+<tr valign="top">
+<td>tabindex</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		Position of this element in the tabbing order for the current document. 
+		This value must be an integer between 0 and 32767.	
+      </td>
+</tr>
+<tr valign="top">
+<td>title</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        Passed through to root element.
+      </td>
+</tr>
+<tr valign="top">
+<td>uniqueFolder</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		This uniqueFolder attribute works in conjunction with the com.icesoft.faces.uploadDirectory
+		parameter with four possible combinations as illustrated in the table below:
+		<table border="1">
+			<tr><td></td><td colspan="2" align="center"> <b>com.icesoft.faces.uploadDirectory</b> </td></tr>
+			<tr><td><b>uniqueFolder</b></td><td align="center"><b>Set</b></td><td align="center"><b>Not Set</b></td></tr>
+			<tr><td>True</td><td>/application-context/uploadDirectory/sessionid/</td><td>/application-context/sessionid/</td></tr>
+			<tr><td>False</td><td>/application-context/uploadDirectory/</td><td>/application-context/</td></tr>
+		</table>
+		Note: The default value is true.
+      </td>
+</tr>
+<tr valign="top">
+<td>uploadDirectory</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        Describes the directory where any uploaded files should be placed.  
+        Overrides the com.icesoft.faces.uploadDirectory context-param 
+        for this specific inputFile.
+      </td>
+</tr>
+<tr valign="top">
+<td>uploadDirectoryAbsolute</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        If the uploadDirectory should be interpretted as an absolute 
+        path into the filesystem, or as a relative path from the deployment directory.
+        Overrides the com.icesoft.faces.uploadDirectoryAbsolute context-param 
+        for this specific inputFile.
+      </td>
+</tr>
+<tr valign="top">
+<td>value</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+          The current value of this component.
+      </td>
+</tr>
+<tr valign="top">
+<td>width</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        width of the component.
+      </td>
+</tr>
+</table>
+<br>
+<p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="5"><font size="+2"><b>Variables</b></font></td>
+</tr>
+<td colspan="2"><i>No Variables Defined.</i></td>
+</table>
+<br>
+<p></p>
+<a name="navbar_bottom"></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td COLSPAN="3" BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><a NAME="navbar_bottom_firstrow"></a>
+<table BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<tr ALIGN="center" VALIGN="top">
+<td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="tld-summary.html"><font CLASS="NavBarFont1"><b>Library</b></font></a>&nbsp;</td><td BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Tag&nbsp;</font>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ALIGN="right" VALIGN="top" ROWSPAN="3"><em></em></td>
+</tr>
+<tr>
+<td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2"></font></td><td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2">
+                &nbsp;<a HREF="../index.html" TARGET="_top"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a href="inputFile.html" target="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a HREF="../alltags-noframe.html" TARGET=""><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<small><i>
+            Output Generated by 
+            <a href="http://taglibrarydoc.dev.java.net/" target="_blank">Tag Library Documentation Generator</a>.
+            Java, JSP, and JavaServer Pages are trademarks or 
+            registered trademarks of Sun Microsystems, Inc. in the US and other
+            countries.  Copyright 2002-4 Sun Microsystems, Inc.
+            4150 Network Circle
+            Santa Clara, CA 95054, U.S.A.
+            All Rights Reserved. 
+            </i></small>
+</body>
+</html>

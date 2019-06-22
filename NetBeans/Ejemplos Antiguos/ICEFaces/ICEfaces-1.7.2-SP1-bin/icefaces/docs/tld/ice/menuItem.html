@@ -1,0 +1,296 @@
+<html xmlns:j2ee="http://java.sun.com/xml/ns/j2ee" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>menuItem
+          (ICEfaces Custom Components)
+        </title>
+<meta name="keywords" content="$title">
+<link rel="stylesheet" type="text/css" href="../stylesheet.css" title="Style">
+</head>
+<script>
+            function asd()
+            {
+            parent.document.title="menuItem (ICEfaces Custom Components)";
+            }
+          </script>
+<body bgcolor="white" onload="asd();">
+<a name="navbar_top"></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td COLSPAN="3" BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><a NAME="navbar_top_firstrow"></a>
+<table BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<tr ALIGN="center" VALIGN="top">
+<td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="tld-summary.html"><font CLASS="NavBarFont1"><b>Library</b></font></a>&nbsp;</td><td BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Tag&nbsp;</font>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ALIGN="right" VALIGN="top" ROWSPAN="3"><em></em></td>
+</tr>
+<tr>
+<td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2"></font></td><td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2">
+                &nbsp;<a HREF="../index.html" TARGET="_top"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a href="menuItem.html" target="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a HREF="../alltags-noframe.html" TARGET=""><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<h2>
+<font size="-1">ICEfaces Component Suite</font>
+<br>
+            Tag menuItem</h2>
+<hr>
+      
+            MenuItem components are the menu items contained by a menuBar. The value attribute 
+            defines the label displayed for the menuItem. The icon attribute can be used to 
+            specify an image that displays on the left side of the menuItem. The action and 
+            actionListener attributes operate in the same way os the standard component attributes
+            of the same name. The menuItem component is only used in the static approach to defining 
+            the heirarchy of menu items.
+    <br>
+<p></p>
+<hr>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="2"><font size="+2"><b>Tag Information</b></font></td>
+</tr>
+<tr>
+<td>Tag Class</td><td>com.icesoft.faces.component.menubar.MenuItemTag</td>
+</tr>
+<tr>
+<td>TagExtraInfo Class</td><td><i>None</i></td>
+</tr>
+<tr>
+<td>Body Content</td><td>JSP</td>
+</tr>
+<tr>
+<td>Display Name</td><td><i>None</i></td>
+</tr>
+</table>
+<br>
+<p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="5"><font size="+2"><b>Attributes</b></font></td>
+</tr>
+<tr>
+<td><b>Name</b></td><td><b>Required</b></td><td><b>Request-time</b></td><td><b>Type</b></td><td><b>Description</b></td>
+</tr>
+<tr valign="top">
+<td>action</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		MethodBinding representing the application action to invoke when
+		this component is activated by the user. The expression must
+		evaluate to a either a String or a public method that takes no
+		parameters, and returns a String (the logical outcome) which is
+		passed to the NavigationHandler for this application.
+      </td>
+</tr>
+<tr valign="top">
+<td>actionListener</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		MethodBinding representing an action listener method that will be 
+		notified when this component is activated by the user. The expression 
+		must evaluate to a public method that takes an ActionEvent parameter, 
+		with a return type of void. 
+      </td>
+</tr>
+<tr valign="top">
+<td>alt</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        Passed through to IMG tag of rendered icon in MenuItem
+      </td>
+</tr>
+<tr valign="top">
+<td>binding</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        The value binding expression linking this component to a property in a backing bean
+      </td>
+</tr>
+<tr valign="top">
+<td>disabled</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        Indicates tab should be disabled.
+      </td>
+</tr>
+<tr valign="top">
+<td>enabledOnUserRole</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		If user is in given role, this component will be rendered
+		normally. If not, the component will be in disabled state.
+      </td>
+</tr>
+<tr valign="top">
+<td>icon</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        icon
+      </td>
+</tr>
+<tr valign="top">
+<td>id</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+  			The component identifier for this component. This value must be 
+  			unique within the closest parent component that is a naming 
+  			container.
+      </td>
+</tr>
+<tr valign="top">
+<td>immediate</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+
+		Flag indicating that this component's value must be converted
+		and validated immediately (that is, during Apply Request Values
+		phase), rather than waiting until Process Validations phase.
+      </td>
+</tr>
+<tr valign="top">
+<td>link</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        link
+      </td>
+</tr>
+<tr valign="top">
+<td>onclick</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        Javascript to be executed before the MenuItem's CommandLink submits to the server.
+      </td>
+</tr>
+<tr valign="top">
+<td>rendered</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+  			Flag indicating whether or not this component should be rendered 
+  			(during Render Response Phase), or processed on any subsequent form 
+  			submit.
+      </td>
+</tr>
+<tr valign="top">
+<td>renderedOnUserRole</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+
+		If user is in given role, this component will be rendered
+		normally. If not, nothing is rendered and the body of this tag
+		will be skipped.
+      </td>
+</tr>
+<tr valign="top">
+<td>styleClass</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+              Space-separated list of CSS style class(es) to be applied when this
+              element is rendered. This value must be passed through as the 
+              "class" attribute on generated markup.<br/><br/>
+              As the top level menu items are part of the menuBar so the style 
+              class names rendered differently for top level and non 
+              to level menu items. <br/>
+              <p>
+              The base name rendered same for all non top level menu item regardless
+              of orientation. Default value is <b>iceMnuItm</b></p>
+              if enabled 
+              <ul>
+                <li>iceMnuItm</li>
+                <li>iceMnuItmImage</li>
+                <li>iceMnuItmLabel</li>
+              </ul>
+
+              if disabled 
+              <ul>
+                <li>iceMnuItm-dis</li>
+                <li>iceMnuItmImage-dis</li>
+                <li>iceMnuItmLabel-dis</li>
+              </ul>
+			  <p>
+			  As the top level menu item is part of the MenuBar, so it is 
+			  possible to have different representation for horizontal and 
+			  vertical menu. <br/>
+			  For the top level menu items the style class base name depends on 
+			  orientation of the menu . Default value for top level menu item
+			  <b>iceMnuBar</b>: <br/>
+			  if enabled + horizontal
+              <ul>
+                <li>iceMnuBarItem</li>
+                <li>iceMnuBarItemImage</li>
+                <li>iceMnuBarItemLabel</li>
+              </ul>
+
+			  if enabled + vertical
+              <ul>
+                <li>iceMnuBarVrtItem</li>
+                <li>iceMnuBarVrtItemImage</li>
+                <li>iceMnuBarVrtItemLabel</li>
+              </ul>
+
+			  if disabled + horizontal
+              <ul>
+                <li>iceMnuBarItem-dis</li>
+                <li>iceMnuBarItemImage-dis</li>
+                <li>iceMnuBarItemLabel-dis</li>
+              </ul>
+
+			  if disabled + vertical
+              <ul>
+                <li>iceMnuBarVrtItem-dis</li>
+                <li>iceMnuBarVrtItemImage-dis</li>
+                <li>iceMnuBarVrtItemLabel-dis</li>
+              </ul>
+			  </p> 
+      </td>
+</tr>
+<tr valign="top">
+<td>target</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        target
+      </td>
+</tr>
+<tr valign="top">
+<td>title</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        Passed through to root DIV tag of rendered MenuItem
+      </td>
+</tr>
+<tr valign="top">
+<td>value</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        The current value of this component.
+      </td>
+</tr>
+</table>
+<br>
+<p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="5"><font size="+2"><b>Variables</b></font></td>
+</tr>
+<td colspan="2"><i>No Variables Defined.</i></td>
+</table>
+<br>
+<p></p>
+<a name="navbar_bottom"></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td COLSPAN="3" BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><a NAME="navbar_bottom_firstrow"></a>
+<table BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<tr ALIGN="center" VALIGN="top">
+<td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="tld-summary.html"><font CLASS="NavBarFont1"><b>Library</b></font></a>&nbsp;</td><td BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Tag&nbsp;</font>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ALIGN="right" VALIGN="top" ROWSPAN="3"><em></em></td>
+</tr>
+<tr>
+<td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2"></font></td><td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2">
+                &nbsp;<a HREF="../index.html" TARGET="_top"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a href="menuItem.html" target="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a HREF="../alltags-noframe.html" TARGET=""><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<small><i>
+            Output Generated by 
+            <a href="http://taglibrarydoc.dev.java.net/" target="_blank">Tag Library Documentation Generator</a>.
+            Java, JSP, and JavaServer Pages are trademarks or 
+            registered trademarks of Sun Microsystems, Inc. in the US and other
+            countries.  Copyright 2002-4 Sun Microsystems, Inc.
+            4150 Network Circle
+            Santa Clara, CA 95054, U.S.A.
+            All Rights Reserved. 
+            </i></small>
+</body>
+</html>

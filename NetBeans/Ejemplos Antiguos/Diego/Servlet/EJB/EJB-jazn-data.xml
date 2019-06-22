@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'windows-1252' standalone = 'yes'?>
+<jazn-data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xmlns.oracle.com/oracleas/schema/jazn-data-10_0.xsd" filepath="" OC4J_INSTANCE_ID="">
+    <jazn-realm>
+        <realm>
+            <name>jazn.com</name>
+            <users>
+                <user>
+                    <name>DataBase_User_164wt4UzhVmO1jasIJ0tuvLCV0f4WbkE</name>
+                    <credentials>{903}164wt4UzhVmO1jasIJ0tuvLCV0f4WbkE</credentials>
+                </user>
+                <user>
+                    <name>DataBase_User_fKFH-kFqW0CBlnkdRB39gsZ4nlD7d4tA</name>
+                    <credentials>{903}fKFH+kFqW0CBlnkdRB39gsZ4nlD7d4tA</credentials>
+                </user>
+            </users>
+            <roles/>
+        </realm>
+    </jazn-realm>
+</jazn-data>

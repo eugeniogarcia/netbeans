@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<project name="datebundle" default="all">
+	<property name="app.name" value="datebundle"/>
+	<property name="output.home" value="./build"/>
+	<property environment="env"/>
+	<property name="osgi.deploy" value="${env.OSGI_HOME}/jars"/>
+	<path id="lib.class.path">
+		<fileset dir="${env.OSGI_HOME}">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+	<target name="all" depends="init,compile,jar,deploy"/>
+	<target name="init">
+		<mkdir dir="./classes"/>
+		<mkdir dir="./build"/>
+	</target>
+	<target name="compile">
+		<javac destdir = "./classes" debug = "on">
+			<src path= "./src"/>
+			<classpath refid="lib.class.path"/>
+		</javac>
+	</target>
+	<target name="jar">
+		<jar basedir = "./classes"
+		jarfile = "./build/${app.name}.jar"
+		compress = "true"
+		includes = "**/*"
+		manifest = "./meta-inf/MANIFEST.MF"
+		/>
+	</target>
+	<target name="clean">
+		<delete dir = "./classes"/>
+		<delete dir = "./build"/>
+	</target>
+	<target name="deploy" depends="jar">
+		<delete>
+			<fileset dir="${osgi.deploy}">
+				<include name="${app.name}.jar"/>
+			</fileset>
+		</delete>
+		<copy todir="${osgi.deploy}">
+			<fileset dir="${output.home}" includes="${app.name}.jar"/>
+		</copy>
+	</target>
+</project>

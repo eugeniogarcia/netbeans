@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-Name: dateserviceuser
+Bundle-SymbolicName: dateserviceuser
+Bundle-Version: 1.0.0
+Bundle-Description: Bundle that consumes dateservice exported by another bundle
+Bundle-Vendor: Revista Sólo Programadores
+Bundle-Activator: es.solop.dateserviceuser.impl.Activator
+Import-Package: org.osgi.framework,es.solop.dateservice
+

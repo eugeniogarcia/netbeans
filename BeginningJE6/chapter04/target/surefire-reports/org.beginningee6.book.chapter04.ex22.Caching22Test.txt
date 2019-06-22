@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.beginningee6.book.chapter04.ex22.Caching22Test
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1 sec

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="deploy" name="build">
+	<property name="base" value=".." />
+	<!--	<property name="output.classes" value="bin" />
+	<property name="output.jar" value="export" />
+	<property name="plugin.name" value="sp.osgi.ejemplo1" />
+	<property name="plugin.version" value="1.0.0" />
+	<property name="jar.name" value="${output.jar}/${plugin.name}_${plugin.version}.jar" />
+-->
+	<property name="plugin.name.b1" value="sp.osgi.bundle1" />
+	<property name="plugin.version.b1" value="1.0.0" />
+	<property name="base.b1" value="${base}/${plugin.name.b1}" />
+	<property name="src.b1" value="${base.b1}/src" />
+	<property name="output.classes.b1" value="${base.b1}/bin" />
+	<property name="output.jar.b1" value="${base.b1}/export" />
+	<property name="jar.name.b1" value="${output.jar.b1}/${plugin.name.b1}_${plugin.version.b1}.jar" />
+
+
+	<property name="plugin.name.b2" value="sp.osgi.bundle2" />
+	<property name="base.b2" value="${base}/${plugin.name.b2}" />
+
+	<property name="plugin.name.b3" value="sp.osgi.bundle3" />
+	<property name="base.b3" value="${base}/${plugin.name.b3}" />
+
+	<path id="compile.classpath">
+		<fileset dir="${base.b3}/export">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="${base.b3}/export">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="${base.b1}/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<target name="compile.b1">
+		<mkdir dir="${output.classes.b1}" />
+		<javac srcdir="${src.b1}" destdir="${output.classes.b1}" classpathref="compile.classpath" debug="off" />
+	</target>
+
+	<target name="jar.b1" depends="compile.b1">
+		<delete file="${jar.name.b1}" failonerror="false" />
+		<mkdir dir="${output.jar.b1}" />
+		<zip destfile="${jar.name.b1}">
+			<fileset dir="${output.classes.b1}">
+				<include name="**/*.class" />
+			</fileset>
+			<fileset dir="${base.b1}">
+				<include name="**/MANIFEST.MF" />
+			</fileset>
+		</zip>
+	</target>
+
+	<target name="jar.b2">
+		<ant antfile="${base.b2}/build.xml" target="deploy"/>
+	</target>
+	
+	<target name="jar.b3">
+		<ant antfile="${base.b3}/build.xml" target="deploy"/>
+	</target>
+
+	<target name="deploy" depends="jar.b3, jar.b2, jar.b1">
+		<copy file="${jar.name.b1}" todir="../runtime-ejemplo1" />
+	</target>
+
+</project>

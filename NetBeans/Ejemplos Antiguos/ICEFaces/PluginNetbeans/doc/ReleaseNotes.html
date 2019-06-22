@@ -1,0 +1,241 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <title>ICEfaces™ v1.7.2 NetBeans Release Notes</title>
+  <meta name="GENERATOR" content="OpenOffice.org 2.0 (Linux)">
+  <meta name="CREATED" content="20080327;9292300">
+  <meta name="CHANGEDBY" content="Frank Ye">
+  <meta name="CHANGED" content="20080411;15183300">
+<!-- saved from url=(0022)http://internet.e-mail -->
+  <style type="text/css">
+body, td, th, input {
+font-family:verdana,sans-serif;
+font-size:80%;
+}
+code, pre {
+font-size:110% }
+body {
+color:#333333;
+margin-right:40px;
+margin-bottom:3em;
+margin-left:40px;
+}
+h2{
+font-size:150%;
+font-weight:normal;
+}
+h3 {
+font-size:125%;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family:arial,verdana,sans-serif;
+margin:1em 0pt 0.2em;
+}
+h1, h2 {
+border-bottom:1px solid #AAAAAA;
+font-weight: bold;
+}
+h4 {
+font-size: 110%
+}
+<!--
+H1 { border-top: none; border-bottom: 1px solid #aaaaaa; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0in; color: #333333; font-family: "arial", "verdana", sans-serif }
+P { margin-left: 0.47in; margin-right: 0.47in; color: #333333; font-family: "verdana", sans-serif }
+H2 { border-top: none; border-bottom: 1px solid #aaaaaa; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0in; color: #333333; font-family: "arial", "verdana", sans-serif }
+H3 { color: #333333; font-family: "arial", "verdana", sans-serif }
+-->
+  </style>
+</head>
+<body style="direction: ltr; color: rgb(51, 51, 51);" lang="en-US">
+<table style="page-break-before: always;" bgcolor="#e6f3fb" border="0"
+ cellpadding="2" cellspacing="2" width="100%">
+  <tbody>
+    <tr>
+      <td width="78%">
+      <h2
+ style="border: medium none ; padding: 0in; margin-left: 0.19in; margin-top: 0.09in;">ICEfaces<font
+ size="5"><sup>®</sup></font>&nbsp;Project&nbsp;Integration <br>
+Plugin for&nbsp;NetBeans&nbsp;6.1<br>
+Release Notes<br>
+      </h2>
+      <h4
+ style="border: medium none ; padding: 0in; margin-left: 0.19in;">Nov
+26th, 2008</h4>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><br>
+<br>
+</p>
+<h2><a name="Overview"></a>Overview</h2>
+<p>ICEfaces NetBeans Integration provides ICEfaces support for
+developers who use the&nbsp; NetBeans IDE for
+ICEfaces application development. This integration&nbsp;is based on
+NetBeans
+6.1.<br>
+<br>
+&nbsp;This integration release&nbsp;includes: </p>
+<ol>
+  <li>
+    <p style="margin-bottom: 0in;">ICEfaces Project
+Integration module
+3.3.0.2.1.1.1</p>
+  </li>
+  <li>
+    <p>ICEfaces Run-Time Library module 1.7.2.2</p>
+  </li>
+</ol>
+<p><br>
+This document contains the following sections:</p>
+<ul>
+  <li>
+    <p style="margin-bottom: 0in;"><a href="#Changes_17b1">Changes in
+this release</a> </p>
+  </li>
+  <li>
+    <p style="margin-bottom: 0in;"><a href="#Known_Issues">Known Issues</a>
+    </p>
+  </li>
+  <li>
+    <p style="margin-bottom: 0in;"><a href="#Support">Support</a> </p>
+  </li>
+  <li>
+    <p><a href="#About_ICEfaces">About ICEfaces </a> </p>
+  </li>
+</ul>
+<p><br>
+<br>
+</p>
+<h2><a name="Changes_17b1"></a>Changes in this
+release</h2>
+<ul>
+  <li>library module includes ICEfaces v1.7.1 and ICEfaces v1.7.2 sp1.</li>
+</ul>
+<h2><a name="Known_Issues"></a>Known Issues</h2>
+<ul>
+  <li>
+    <p style="margin-bottom: 0in;">ICEfaces must use JSF
+1.1
+"compatibility mode" within JSF 1.2 environments. This can be done by
+setting the
+context&nbsp;init&nbsp;parameter&nbsp;'com.sun.faces.enableRestoreView11Compatibility'
+to 'true' in your web.xml file. See the "JSF 1.2" topic in the "Using
+ICEfaces with Java EE Application Servers, IDEs, and Frameworks"
+chapter of the ICEfaces Getting Started Guide for details. </p>
+  </li>
+  <li>
+    <p>Due to the functional limitations of the NetBeans Visual
+JSF
+Editor,
+the dynamic runtime features of ICEfaces components are not supported.
+Visual JSF and ICEfaces designtime support are intended to provide
+close-to-WYSIWIG editing experience.</p>
+  </li>
+  <li>
+    <p>Using the JPA binding wizard with ICEfaces components in
+visual
+design is not supported in this release.</p>
+  </li>
+</ul>
+<ul>
+</ul>
+<h2>Support</h2>
+<p>Open source community support is available at
+<a href="http://www.icefaces.org/">http://www.icefaces.org</a>.
+Refer to the ICEfaces <a
+ href="http://www.icefaces.org/JForum/forums/show/13.page"
+ target="_blank">Tools forum</a> for questions and
+answers specific to this NetBeans IDE integration.&nbsp;</p>
+<p>For information on commercial support, professional services,
+and
+training, please visit <a href="http://support.icefaces.org/"
+ target="_blank">http://support.icefaces.org</a>.</p>
+<h2><a name="About_ICEfaces"></a>About ICEfaces</h2>
+<p>ICEfaces delivers extensions to Java ServerFaces (JSF) that
+provide an AJAX-enabled rich presentation environment for JSF
+applications. ICEfaces brings value to any Java EE development
+project that needs to provide superior presentation capabilities to
+the web application user. In particular, ICEfaces provides the
+following features:</p>
+<ul>
+  <li>
+    <p style="margin-bottom: 0in;">Smooth, incremental
+page updates
+that do not require a full page refresh to achieve presentation changes
+in the application. </p>
+  </li>
+  <li>
+    <p style="margin-bottom: 0in;">Server-initiated
+asynchronous
+presentation updates for dynamic instantaneous data push. </p>
+  </li>
+  <li>
+    <p style="margin-bottom: 0in;">The ICEfaces Component
+Suite, a
+complete rich JSF component suite that fully leverages ICEfaces
+capabilities. </p>
+  </li>
+  <li>
+    <p style="margin-bottom: 0in;">Intelligent form
+processing that
+facilitates fine-grained interactions with the user as they manipulate
+a form. </p>
+  </li>
+  <li>
+    <p style="margin-bottom: 0in;">API support for rapid
+development of
+group-aware and collaborative applications, such as Chat, Webcast,
+social apps., etc. </p>
+  </li>
+  <li>
+    <p style="margin-bottom: 0in;">JSP or Facelets based
+development. </p>
+  </li>
+  <li>
+    <p style="margin-bottom: 0in;">Tool integrations for
+leading Java
+IDEs. </p>
+  </li>
+  <li>
+    <p style="margin-bottom: 0in;">Support for leading
+Java EE
+frameworks, such as Spring and JBoss Seam. </p>
+  </li>
+  <li>
+    <p>Support for portlet development.</p>
+  </li>
+</ul>
+<h3>Learn More</h3>
+<p>This ICEfaces release comes with extensive documentation that
+will
+help you understand the product thoroughly. Documentation for
+ICEfaces is available on-line at<u>
+</u><a href="http://documentation.icefaces.org/">http://documentation.icefaces.org/</a>
+The following documents are provided in PDF format:</p>
+<ol>
+  <li>
+    <p style="margin-bottom: 0in;">ICEfaces Getting
+Started Guide: This
+guide takes you through product installation, environment
+configuration, demo app installation, and a basic 7-stage tutorial.
+This guide also contains information related to support for different
+application server environments and development tools. </p>
+  </li>
+  <li>
+    <p>ICEfaces Developer's Guide: This guide contains
+information
+relevant to developing applications with ICEfaces. It describes the
+ICEfaces architecture, and explains key concepts that the ICEfaces
+developer should be aware of. It also provides a complete reference
+guide that covers APIs, configuration, components (including the
+ICEfaces Component Suite) and TLDs, and covers advanced topics like
+server-initiated rendering. </p>
+  </li>
+</ol>
+<p><font size="2"><br>
+© Copyright 2005-2008 ICEsoft Technologies,
+Inc.</font></p>
+</body>
+</html>

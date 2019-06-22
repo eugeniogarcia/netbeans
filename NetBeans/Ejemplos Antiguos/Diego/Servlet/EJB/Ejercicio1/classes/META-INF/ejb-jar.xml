@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<ejb-jar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/ejb-jar_2_1.xsd" version="2.1" xmlns="http://java.sun.com/xml/ns/j2ee">
+  <enterprise-beans>
+    <session>
+      <description>Session Bean ( Stateless )</description>
+      <display-name>Info</display-name>
+      <ejb-name>Info</ejb-name>
+      <home>ejercicio1.InfoHome</home>
+      <remote>ejercicio1.Info</remote>
+      <local-home>ejercicio1.InfoLocalHome</local-home>
+      <local>ejercicio1.InfoLocal</local>
+      <ejb-class>ejercicio1.InfoBean</ejb-class>
+      <session-type>Stateless</session-type>
+      <transaction-type>Container</transaction-type>
+    </session>
+    <entity>
+      <description>Entity Bean ( CMP )</description>
+      <display-name>Usuario</display-name>
+      <ejb-name>Usuario</ejb-name>
+      <home>ejercicio1.UsuarioHome</home>
+      <remote>ejercicio1.Usuario</remote>
+      <local-home>ejercicio1.UsuarioLocalHome</local-home>
+      <local>ejercicio1.UsuarioLocal</local>
+      <ejb-class>ejercicio1.UsuarioBean</ejb-class>
+      <persistence-type>Container</persistence-type>
+      <prim-key-class>java.lang.String</prim-key-class>
+      <reentrant>false</reentrant>
+      <cmp-version>2.x</cmp-version>
+      <abstract-schema-name>Usuario</abstract-schema-name>
+      <cmp-field>
+        <field-name>usuario</field-name>
+      </cmp-field>
+      <cmp-field>
+        <field-name>clave</field-name>
+      </cmp-field>
+      <primkey-field>usuario</primkey-field>
+      <query>
+        <query-method>
+          <method-name>findAll</method-name>
+          <method-params/>
+        </query-method>
+        <ejb-ql>select object(o) from Usuario o</ejb-ql>
+      </query>
+    </entity>
+  </enterprise-beans>
+  <assembly-descriptor/>
+</ejb-jar>

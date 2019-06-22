@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-Name: Mi Primer Servicio Cliente
+Bundle-SymbolicName: firstserviceCliente
+Bundle-Version: 1.0.0
+Bundle-Description: Ejemplo de Uso de un servicio
+Bundle-Vendor: MySelf Corp.
+Bundle-Activator: de.vpe.firstserviceCliente.impl.Activator
+Bundle-Category: Ejemplos
+Import-Package: org.osgi.framework,de.vpe.firstservice

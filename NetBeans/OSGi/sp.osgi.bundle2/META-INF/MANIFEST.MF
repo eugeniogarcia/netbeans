@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Bundle2 Plug-in
+Bundle-SymbolicName: sp.osgi.bundle2
+Bundle-Version: 1.0.0
+Bundle-Localization: plugin
+Export-Package: sp.osgi.bundle2.paquete2

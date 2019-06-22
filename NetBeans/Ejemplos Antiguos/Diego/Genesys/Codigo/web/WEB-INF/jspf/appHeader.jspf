@@ -1,0 +1,31 @@
+<%  String section = request.getParameter("section");
+    if(section == null) {
+        section = "";
+    }
+%>
+
+<div id="contenedor_cabecera">
+<div id="espacio_logo">
+<!--<div id="logo"><a href="#"><img src="/vu/img/logotipo.gif" alt="Logomarca Intranet Telef&oacute;nica" width="276" height="32" border="0" /></a></div>-->
+<div id="cierre_cabecera"></div>
+</div></div>
+
+
+<!--
+<div style="MARGIN: 0px auto; WIDTH: 980px">
+    <div style='height: 99px; BACKGROUND-POSITION: left top; BACKGROUND-IMAGE: url(/vu/img/fd_cent.gif); TEXT-ALIGN: center;'>
+        <div style="float: left; margin-top: 5px;">
+            <img src='/vu/img/cab_logo.gif'>
+        </div>
+        <div style='FONT-SIZE: 15px; FONT-WEIGHT: 600; FLOAT: left; margin-left: 290px; margin-top: 10px; COLOR: #ffffff; PADDING-TOP: 14px; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #00086e; TEXT-ALIGN: left;'>
+            ESTADIST&Iacute;CAS DEL SERVICIO
+        </div>
+        <div style='float: top; FONT-STYLE: oblique; TEXT-ALIGN: right;'>
+            <img src='/vu/img/logo_srv.gif'>
+        </div>
+        <div id='titulo' style='float: top; FONT-SIZE: 12px; BORDER-RIGHT: #a5bc00 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #a5bc00 1px solid; padding-LEFT: 100px; FONT-WEIGHT: bold; PADDING-BOTTOM: 3px; BORDER-LEFT: #a5bc00 1px solid; COLOR: #635f59; margin-TOP: 15px; BACKGROUND-COLOR: #ffffff'>          
+        </div>
+        <div id='subtitulo' style='float: top; PADDING-RIGHT: 5px; padding-LEFT: 100px; PADDING-BOTTOM: 3px; margin-TOP: 5px; COLOR: #635f59;'>          
+        </div>
+    </div>
+</div>-->

@@ -1,0 +1,474 @@
+BODY
+{    
+    FONT-SIZE: 11px;
+    BACKGROUND: #ffffff;     
+    MARGIN: 0px;    
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    text-align: left;   
+    SCROLLBAR-FACE-COLOR:#E9EDF4;
+    SCROLLBAR-HIGHLIGHT-COLOR: #FFF7E2;
+    SCROLLBAR-SHADOW-COLOR: #E9EDF4;
+    SCROLLBAR-ARROW-COLOR: #688DBC;
+    SCROLLBAR-BASE-COLOR:#E9EDF4;
+    scrollbar-3d-light-color: #E9EDF4;
+    scrollbar-dark-shadow-color: #E9EDF4;
+    scrollbar-Track-Color:#FFFFFF;
+    overflow-x:hidden; 
+    
+}
+
+LABEL{
+    font-family: arial;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;    
+    TEXT-ALIGN: right;
+}
+
+.informe{
+    FONT-SIZE: 15px;
+}
+
+SELECT
+{
+    FONT-SIZE: 9px;
+    COLOR: #000000;    
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+input.text{
+    FONT-SIZE: 10px;
+    BORDER-RIGHT: #999 1px solid;
+    BORDER-TOP: #999 1px solid;
+    BORDER-LEFT: #999 1px solid;
+    BORDER-BOTTOM: #999 1px solid;     
+    BACKGROUND-color: #;
+    TEXT-ALIGN: #right;
+}
+
+input.button{
+    FONT-SIZE: 10px;
+    BORDER-RIGHT: #999 1px solid;
+    BORDER-TOP: #999 1px solid;
+    BORDER-LEFT: #999 1px solid;
+    BORDER-BOTTOM: #999 1px solid;
+    width: 60px;    
+}
+
+#menu
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 5px;
+    LEFT: 0px;
+    MARGIN-TOP: 30px;
+    PADDING-BOTTOM: 10px;
+    WIDTH: 180px;
+    POSITION: absolute;
+    TOP: 100px;
+}
+
+#menu_informes{
+    FONT-SIZE: 14px;
+    FONT-WEIGHT: bold;
+}
+
+#menu_graficas{
+    PADDING-TOP: 5px;
+    FONT-SIZE: 14px;
+    FONT-WEIGHT: bold;
+}
+
+DIV#logo
+{
+    FLOAT: left
+}
+#menu UL
+{    
+    MARGIN-LEFT: 2px;
+    text-align: left;
+    padding-top: 0px; 
+    padding-bottom: 15px; 
+}
+
+#menu LI
+{    
+    FONT-SIZE: 12px;
+    text-align: left;
+    display: list-item;  
+    list-style-type: none;
+    list-style-position: outside;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+#menu LI A:link
+{
+    COLOR: black;
+    BORDER-BOTTOM: #bbd 0px dotted;
+
+}
+
+#menu LI A
+{
+    display: inline;    
+    color: black;    
+    padding-left: 15px;
+    background-image: url(/vu/img/punto.gif);
+    background-repeat: no-repeat;
+    background-position: left;
+    /*list-style-image: url(/vu/img/punto.gif);    */    
+    text-decoration : none;    
+}
+
+#menu LI A:hover
+{
+    padding-left: 15px;
+    background-image: url(/vu/img/punto_act.gif);
+    background-repeat: no-repeat;
+    background-position: center left;
+    /*list-style-image: url(/vu/img/punto_act.gif);*/
+    color: blue;     
+}
+/*  revisar este q funcione, porq no funciona bien siempre */
+
+.titulo {
+	FONT-WEIGHT: normal; FONT-SIZE: 18px; COLOR: #5a5a5a; FONT-FAMILY: Arial, Helvetica, sans-serif; LETTER-SPACING: 1px; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none; 
+}
+
+/*Muestra el contenido general de la pagina informes.jsp*/
+div#contenido {    
+    padding-left: 10px;	
+    width: 980px;        
+    margin: 0 auto;    
+}
+
+div#desglose {
+    float :left;    
+    width: 27%;
+    text-align: left; 
+    padding-left: 10px;        
+    BORDER: #5c93be 1px solid;    
+    PADDING-BOTTOM: 10px;
+    MARGIN: 30px 0px 10px 100px;
+    PADDING-TOP: 10px;    
+    HEIGHT: 50px;
+    BACKGROUND-COLOR: #f5f5f5;
+}
+
+div#desglose label{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;    
+    TEXT-ALIGN: left;
+    font-family: arial;
+}
+
+div#fechas {    
+    float :left;    
+    width: 37%;
+    text-align: left; 
+    padding-left: 8px;
+    PADDING-RIGHT: 10px;    
+    BORDER: #5c93be 1px solid;    
+    PADDING-BOTTOM: 10px;
+    MARGIN: 30px 0px 0px 20px;
+    PADDING-TOP: 10px;    
+    HEIGHT: 50px;    
+    BACKGROUND-COLOR: #f5f5f5;
+    text-decoration: none;
+}
+
+div#fechasG {    
+    float :left;    
+    text-align: left; 
+    padding-left: 5px;
+    PADDING-RIGHT: 7px;    
+    BORDER: #5c93be 1px solid;    
+    PADDING-BOTTOM: 10px;
+    MARGIN: 0px 0px 0px 0px;
+    PADDING-TOP: 10px;    
+    HEIGHT: 50px;
+    BACKGROUND-COLOR: #f5f5f5;
+}
+div#semanas {    
+    float :left;    
+    width: 37%;
+    text-align: left;     
+    padding-left: 10px;
+    PADDING-RIGHT: 10px;        
+    margin-top: 15px;
+    BORDER: #5c93be 1px solid;    
+    PADDING-BOTTOM: 10px;
+    MARGIN: 30px 0px 0px 40px;
+    PADDING-TOP: 10px;    
+    HEIGHT: 50px;
+    BACKGROUND-COLOR: #f5f5f5;
+}
+
+
+div#fechas label{
+    font-family: arial;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;    
+    TEXT-ALIGN: left;
+}
+
+div#fechasG label{
+    font-family: arial;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;    
+    TEXT-ALIGN: left;
+}
+
+div#botones{
+    padding-left: 15px;    
+    padding-top: 30px;
+    padding-bottom: 15px;
+    float:left;
+}
+
+.workspace
+{    
+    BORDER: #5c93be 0px solid;        
+    PADDING-LEFT: 10px;
+    PADDING-BOTTOM: 10px;
+    MARGIN: 15px 0px 0px 180px;    
+    PADDING-TOP: 5px;    
+    HEIGHT: 0.01%;
+    BACKGROUND-COLOR: white; 
+    overflow: auto;  
+    position: relative; 
+}
+
+
+.parte1{
+    width: 70%;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 30px;
+    BACKGROUND: white;     
+}
+
+.parte1G{
+
+    float: left;
+    BORDER: #5c93be 0px solid;
+    display: block;
+    MARGIN: 120px 0px 0px -220px;    
+}
+
+.parte2{
+    width: 20%;
+    float: left;
+    BORDER: #5c93be 0px solid;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    MARGIN: -353px 0px 0px 290px;    
+}
+
+.parte2G{
+
+    float: left;    
+    display: block;
+    MARGIN: 20px 0px 0px 150px;    
+}
+
+.partesinIvr{
+    width: auto;
+    BORDER: #5c93be 0px solid;
+    MARGIN: 0px 0px 0px 0px;    
+}
+
+.parteFamilia{
+    width: 30%;
+    BORDER: #5c93be 0px solid;
+    BACKGROUND: white;     
+    PADDING-TOP: 2px;    
+    margin-right: auto;
+    display: block;
+    MARGIN: 20px 0px 0px 40px;    
+   
+}
+
+
+.fila3{
+    width: 100%;
+    float: left;
+    margin-right: auto;
+    margin-top: 10px;
+    display: block;
+    height: 30px;
+}
+
+
+div#columnaVL{
+    float :left; 
+    MARGIN: 0px 1px 0px 0px;    
+    display: block;
+    width: 100%;
+
+}
+
+div#columnaMA{
+    float :left; 
+    MARGIN: -140px 100px 0px 110px;    
+    display: block;
+    width: 100%;
+}
+
+div#columnaPA{
+    float :left; 
+    MARGIN: -140px 1px 0px 220px;    
+    display: block;
+    width: 100%;
+}
+
+div#columnaIvr{
+    float :left; 
+    MARGIN: -155px 0px 0px 230px;    
+    height: 30px;
+    display: block;
+}
+
+div#columnaOf{
+    float :left; 
+    MARGIN: 33px 0px 0px -110px;    
+    BORDER: #5c93be 0px solid;
+    PADDING-TOP: 0px;
+}
+
+div#columnaPlat{
+    float :left; 
+    MARGIN: 19px 120px 0px 0px;    
+}
+
+div#columna1{
+    float :left; 
+    PADDING-TOP: 5PX;
+    PADDING-bottom: 5PX;
+}
+
+div#columna23{
+    float :left; 
+    MARGIN: -22px 0px 0px 15px;    
+    PADDING-bottom: 5PX;
+}
+
+div#columna230{
+    float :left; 
+    MARGIN: 5px 0px 0px 10px;    
+    PADDING-bottom: 5PX;
+}
+
+div#columna22{
+    float :left; 
+    MARGIN: 35px 0px 0px -143px;    
+    PADDING-bottom: 5PX;
+}
+div#columna2{
+    float:left;    
+    padding-left: 12px;
+    PADDING-TOP: 5PX;
+    PADDING-bottom: 5PX;
+}
+
+div#columna24{
+    float :left; 
+    MARGIN: 34px 0px 0px -85px;    
+    PADDING-bottom: 5PX;
+}
+
+div#columna25{
+    float:left;    
+    padding-left: 40px;
+    PADDING-TOP: 5PX;
+    PADDING-bottom: 5PX;
+}
+
+div#columna3{
+    float:left;
+    margin: 0px 0px 0px 15px;
+    PADDING-TOP: 5PX;
+    PADDING-bottom: 5PX;
+}
+
+div#columna32{
+    float:left;
+    padding-left: 42px;
+    PADDING-TOP: 19PX;
+    PADDING-bottom: 5PX;
+}
+
+div#columnaFa{
+    float:left;
+    padding-left: 70px;
+    PADDING-TOP: 5PX;
+    PADDING-bottom: 5PX;
+}
+
+div#columnaPu{
+    float:left;
+    margin: 0px 0px 0px 0px;
+    padding-left: 50px;
+    PADDING-TOP: 30PX;
+    PADDING-bottom: 5PX;
+}
+
+div#columna4{
+    float:left;
+    padding-left: 12px;
+    PADDING-TOP: 5PX;
+    PADDING-bottom: 5PX;
+}
+
+div#columna45{
+    float:left;
+    margin-left: 15px;
+    PADDING-TOP: 5PX;
+    PADDING-bottom: 5PX;
+}
+div#columna5{    
+    float:left;
+    margin: 0px 0px 0px 15px;
+    PADDING-TOP: 5PX;
+    PADDING-bottom: 5PX;
+}
+
+
+/*Para la cabecera de Telefonica*/
+#contenedor_cabecera {
+	background: url(../../img/fondo_cabecera.gif)  repeat-x left top;        
+	height: 116px;        
+	width: 100%;
+	float: left;        
+}
+#espacio_logo {
+	background: url(../../img/cabecera.jpg) no-repeat left top;
+	float: left;
+	height: 116px;
+	width: 100%;        
+}
+#cierre_cabecera {
+	background: url(../../img/cierre_cabecera.gif) no-repeat right top;
+	float: right;
+	height: 116px;
+	width: 316px;                
+}
+#logo {
+	float: left;
+	height: 32px;
+	width: 276px;
+	padding-top: 18px;
+	padding-left: 36px;        
+}
+/*Fin para la cabecera de Telefonica*/
+
+/*div emergentes*/
+div.popup {
+	display: none;
+}
+
+div.popup_show {
+	display: block;
+}
+/*Fin div emergentes*/

@@ -1,0 +1,470 @@
+<html xmlns:j2ee="http://java.sun.com/xml/ns/j2ee" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>outputChart
+          (ICEfaces Custom Components)
+        </title>
+<meta name="keywords" content="$title">
+<link rel="stylesheet" type="text/css" href="../stylesheet.css" title="Style">
+</head>
+<script>
+            function asd()
+            {
+            parent.document.title="outputChart (ICEfaces Custom Components)";
+            }
+          </script>
+<body bgcolor="white" onload="asd();">
+<a name="navbar_top"></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td COLSPAN="3" BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><a NAME="navbar_top_firstrow"></a>
+<table BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<tr ALIGN="center" VALIGN="top">
+<td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="tld-summary.html"><font CLASS="NavBarFont1"><b>Library</b></font></a>&nbsp;</td><td BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Tag&nbsp;</font>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ALIGN="right" VALIGN="top" ROWSPAN="3"><em></em></td>
+</tr>
+<tr>
+<td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2"></font></td><td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2">
+                &nbsp;<a HREF="../index.html" TARGET="_top"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a href="outputChart.html" target="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a HREF="../alltags-noframe.html" TARGET=""><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<h2>
+<font size="-1">ICEfaces Component Suite</font>
+<br>
+            Tag outputChart</h2>
+<hr>
+      <p >
+The outputChart component uses the JCharts open source charting utility
+(http://jcharts.sourceforge.net/) to create charts.
+All chart types are derived from the two main types:
+        <ol>
+            <li>axis : 
+		        <ul>
+		            <li>area</li/>
+		            <li>areastacked</li/>
+		            <li>bar</li/>
+		            <li>barclustered</li/>
+		            <li>barstacked</li/>
+		            <li>line</li/>
+		            <li>point</li/>
+		            <li>stock</li/>                                                                                                         
+		        </ul>
+            </li>
+            <li>pie : 
+                <ul>
+                    <li>pie2D</li/>
+                    <li>pie3D</li/>
+                </ul>
+            </li>
+        </ol>
+        <b>Note:</b> The "type" attribute can be changed using the value binding 
+        for one basic type only. For example you can change "area" to "bar", "bar" to 
+        "line" but not to "pie2d"                     
+</p>
+
+
+<br>
+    <br>
+<p></p>
+<hr>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="2"><font size="+2"><b>Tag Information</b></font></td>
+</tr>
+<tr>
+<td>Tag Class</td><td>com.icesoft.faces.component.outputchart.OutputChartTag</td>
+</tr>
+<tr>
+<td>TagExtraInfo Class</td><td><i>None</i></td>
+</tr>
+<tr>
+<td>Body Content</td><td>JSP</td>
+</tr>
+<tr>
+<td>Display Name</td><td><i>None</i></td>
+</tr>
+</table>
+<br>
+<p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="5"><font size="+2"><b>Attributes</b></font></td>
+</tr>
+<tr>
+<td><b>Name</b></td><td><b>Required</b></td><td><b>Request-time</b></td><td><b>Type</b></td><td><b>Description</b></td>
+</tr>
+<tr valign="top">
+<td>action</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		MethodBinding representing the application action to invoke when
+		this component is activated by the user. The expression must
+		evaluate to a either a String or a public method that takes no
+		parameters, and returns a String (the logical outcome) which is
+		passed to the NavigationHandler for this application.
+      </td>
+</tr>
+<tr valign="top">
+<td>actionListener</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		MethodBinding representing an action listener method that will be 
+		notified when this component is activated by the user. The expression 
+		must evaluate to a public method that takes an ActionEvent parameter, 
+		with a return type of void. 
+      </td>
+</tr>
+<tr valign="top">
+<td>binding</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        The value binding expression linking this component to a property in a backing bean
+      </td>
+</tr>
+<tr valign="top">
+<td>chartTitle</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        Title for the component. The value of this attribute can be defined
+        on the page or can be bound to the backing bean as String type.
+      </td>
+</tr>
+<tr valign="top">
+<td>colors</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		<p>     
+        The value of this attribute can be defined on page or can be defined 
+        using the backing bean, the valid types for the bean is:
+        	<ul>
+			   <li> String array</li>
+        	   <li> List of java.awt.Color</li>
+			</ul>
+        </p> 
+      </td>
+</tr>
+<tr valign="top">
+<td>data</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+         <p>     
+        Data of the chart. The valud of this attribute can be defined on page or
+        can be bound to the backing bean:</br>
+		<b>(e.g.) defining on page</b>
+        <pre> 
+        &lt;ice:outputChart type="pie2d" 
+        		labels="pass, fail" 
+        		data="70, 30" 
+        		colors="green, red"/&gt;
+
+        dataset can be defined using the colon ":" 
+        &lt;ice:outputChart type="barstacked" 
+        		labels="pass, fail" 
+        		data="70, 30, 10 : 10, 50, 70" 
+        		colors="green, red"/&gt;
+        </pre><br/>
+       This attribute's value has correlation with the labels and color attribute.
+       <br/> if the value bounded with backing bean:
+           <ul>
+             <li>double or 2d double array</li>
+             <li>List of double or 2d double array</li>
+           </ul>
+        </p>   
+      </td>
+</tr>
+<tr valign="top">
+<td>height</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        Height of the chart. The value of this attribute can
+        be defined on the page or can be bound to the backing bean as String type.
+      </td>
+</tr>
+<tr valign="top">
+<td>horizontal</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		<p>     
+        This attribute is valid only for the following types of charts:
+        <ul>
+        	<li>bar</li>
+        	<li>barclustered</li>
+        </ul>   
+        </p> 
+      </td>
+</tr>
+<tr valign="top">
+<td>id</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+  			The component identifier for this component. This value must be 
+  			unique within the closest parent component that is a naming 
+  			container.
+      </td>
+</tr>
+<tr valign="top">
+<td>immediate</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+
+		Flag indicating that this component's value must be converted
+		and validated immediately (that is, during Apply Request Values
+		phase), rather than waiting until Process Validations phase.
+      </td>
+</tr>
+<tr valign="top">
+<td>labels</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+         <p>   
+        Legend label of the chart. This attribute can be used for any type of 
+        chart. The value of the labels attribute has correlation with the data 
+        and colors attribute.
+        <br/>
+        When used with pie2D and pie3D the number of values should be same for the
+        labels, data and color attributes. (e.g.)
+        <pre> 
+        &lt;ice:outputChart type="pie2d" 
+        		labels="pass, fail" 
+        		data="70, 30" 
+        		colors="green, red"/&gt;
+         </pre> 
+        When used with other charts except pie, then each labels' value should 
+        be mapped with a dataset. A dataset can be indicated by the colon ":" (e.g.)  
+        <pre>       
+        &lt;ice:outputChart type="barstacked" 
+        		labels="pass, fail" 
+        		data="70, 30, 10: 10, 50, 70" 
+        		colors="green, red"/&gt;
+        </pre> 		
+        The value of labels attribute can be defined on the page:
+        	<ul>
+			   <li> a single word </li>
+        	   <li> comma separated values </li>
+        	</ul>
+        The value of labels attribute can be defined using the backing bean:
+        	<ul>
+			   <li> as String array </li>
+        	   <li> as List of strings </li>
+			</ul>
+        </p> 
+      </td>
+</tr>
+<tr valign="top">
+<td>legendColumns</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		<p>    
+        The number of columns for legend label.
+        <pre> 
+		(e.g.) To show legend columns vertically
+        &lt;ice:outputChart type="barstacked" 
+        		labels="pass, fail" 
+        		data="70, 30, 10: 10, 50, 70" 
+        		colors="green, red"
+        		legendPlacement="right"
+        		legendColumns="1"/&gt;
+         </pre>    
+        </p> 
+      </td>
+</tr>
+<tr valign="top">
+<td>legendPlacement</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		<p>The placement of legend label can be set to one of the following:
+        <ul>
+        	<li>top</li>
+        	<li>bottom (default)</li>
+        	<li>left</li>
+        	<li>right</li>
+        	<li>none</li>          	  
+        </ul>
+        <pre> 
+		(e.g.)
+        &lt;ice:outputChart type="barstacked" 
+        		labels="pass, fail" 
+        		data="70, 30, 10: 10, 50, 70" 
+        		colors="green, red"
+        		legendPlacement="right"/&gt;
+         </pre>         
+         Note: This attribute does not apply to pie3D charts.
+         When the chart type is "custom", remember to read this attribute in
+         your custom charting code and set the chart legend placement accordingly.
+        </p> 
+      </td>
+</tr>
+<tr valign="top">
+<td>renderOnSubmit</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		<p>     
+        The renderOnSubmit attribute lets the developer decide when to render 
+        the chart. However the chart component ensures that the chart image would 
+        be generated for first rendering phase but subsequent rendering of the
+        chart would be based on this attribute's value.<br/>
+        The value of this attribute can be defined on the page or can be bound 
+        to the backing bean as method binding.
+       <pre>
+       &lt;ice:outputChart  renderOnSubmit="true"/&gt;
+       or
+       &lt;ice:outputChart  renderOnSubmit="#{bean.render}"/&gt;
+       method's signature:
+           public boolean render(OutputChart component)
+       </pre>
+        </p> 
+      </td>
+</tr>
+<tr valign="top">
+<td>rendered</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+  			Flag indicating whether or not this component should be rendered 
+  			(during Render Response Phase), or processed on any subsequent form 
+  			submit.
+      </td>
+</tr>
+<tr valign="top">
+<td>shapes</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		<p>     
+        This attribute can be used with the line and point chart. <br/>
+        The following are the valid values:
+        <ul>
+        	<li>circle</li>
+        	<li>diamond</li>
+        	<li>square</li>
+        	<li>triangle</li>
+        </ul>
+        The value of this attribute can be defined on page or can be defined 
+        using the backing bean, the valid types for the bean is:
+        	<ul>
+			   <li> String array containging above strings</li>
+        	   <li> List of java.awt.Shape</li>
+			</ul>
+        </p> 
+      </td>
+</tr>
+<tr valign="top">
+<td>style</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		CSS style(s) to be applied when this component is rendered.
+      </td>
+</tr>
+<tr valign="top">
+<td>styleClass</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        Space-separated list of CSS style class(es) to be applied when this 
+		element is rendered. This value is passed through as the "class" 
+		attribute on generated markup.
+		The base name for all style classes. Default value is <b>iceOutChrt</b>
+		if enabled and <b>iceOutChrt-dis</b> if disabled.
+      </td>
+</tr>
+<tr valign="top">
+<td>type</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		<p>Type of the chart. The valid values are as follows:
+        <ul>
+        	<li>area</li/>
+        	<li>areastacked</li/>
+        	<li>bar</li/>
+        	<li>barclustered</li/>
+        	<li>barstacked</li/>
+        	<li>line</li/>
+        	<li>pie2D</li/>
+        	<li>pie3D</li/>
+        	<li>point</li/>
+        	<li>stock</li/>        	        	        	        	        	        	        	        	        	
+        	<li>custom</li/>        	
+        </ul>
+        Only one type can be set at a time. The value of this attribute can
+        be defined on the page or can be bound to the backing bean as String type.
+        </p> 
+      </td>
+</tr>
+<tr valign="top">
+<td>value</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+          The current value of this component.
+      </td>
+</tr>
+<tr valign="top">
+<td>width</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        Width of the chart. The value of this attribute can
+        be defined on the page or can be bound to the backing bean as String type.
+      </td>
+</tr>
+<tr valign="top">
+<td>xaxisLabels</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		<p>     
+        This attribute can be used with all types of charts except pie2D and pie3D.
+        Each value of xaxisLabels is connected with a dataset.
+        It can be defined on page or bound to the backing bean.
+     	(e.g.)
+     	<pre>
+     	 &lt;ice:outputChart type="barstacked" 
+        		labels="pass, fail" 
+        		data="70, 30, 10 : 10, 50, 70" 
+        		colors="green, red"
+				xaxisLabels="2001, 2002, 2003"        		
+        		/&gt;   
+       </pre>
+        </p> 
+      </td>
+</tr>
+<tr valign="top">
+<td>xaxisTitle</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        Title for x axis of the chart. Valid for all types of charts except 
+        pie2D and pie3D. The value of this attribute can
+        be defined on the page or can be bound to the backing bean as String type. 
+      </td>
+</tr>
+<tr valign="top">
+<td>yaxisTitle</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        Title for y axis of the chart. Valid for all types of charts except 
+        pie2D and pie3D. The value of this attribute can
+        be defined on the page or can be bound to the backing bean as String type.
+      </td>
+</tr>
+</table>
+<br>
+<p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="5"><font size="+2"><b>Variables</b></font></td>
+</tr>
+<td colspan="2"><i>No Variables Defined.</i></td>
+</table>
+<br>
+<p></p>
+<a name="navbar_bottom"></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td COLSPAN="3" BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><a NAME="navbar_bottom_firstrow"></a>
+<table BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<tr ALIGN="center" VALIGN="top">
+<td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="tld-summary.html"><font CLASS="NavBarFont1"><b>Library</b></font></a>&nbsp;</td><td BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Tag&nbsp;</font>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ALIGN="right" VALIGN="top" ROWSPAN="3"><em></em></td>
+</tr>
+<tr>
+<td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2"></font></td><td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2">
+                &nbsp;<a HREF="../index.html" TARGET="_top"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a href="outputChart.html" target="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a HREF="../alltags-noframe.html" TARGET=""><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<small><i>
+            Output Generated by 
+            <a href="http://taglibrarydoc.dev.java.net/" target="_blank">Tag Library Documentation Generator</a>.
+            Java, JSP, and JavaServer Pages are trademarks or 
+            registered trademarks of Sun Microsystems, Inc. in the US and other
+            countries.  Copyright 2002-4 Sun Microsystems, Inc.
+            4150 Network Circle
+            Santa Clara, CA 95054, U.S.A.
+            All Rights Reserved. 
+            </i></small>
+</body>
+</html>

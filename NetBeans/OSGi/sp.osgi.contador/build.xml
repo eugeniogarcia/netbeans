@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="compile" name="build">
+	<property name="cd.base" value="..\CDROOT\OSGi" />
+	<property name="output.classes" value="bin" />
+	<property name="output.jar" value="export" />
+	<property name="plugin.name" value="sp.osgi.contador" />
+	<property name="plugin.version" value="1.0.0" />
+	<property name="jar.name" value="${output.jar}/${plugin.name}_${plugin.version}.jar" />
+
+	<path id="compile.classpath">
+		<fileset dir="lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<target name="compile">
+		<mkdir dir="${output.classes}" />
+		<javac srcdir="src" destdir="${output.classes}" classpathref="compile.classpath" debug="off" />
+	</target>
+
+	<target name="jar" depends="compile">
+		<delete file="${jar.name}" failonerror="false" />
+		<mkdir dir="${output.jar}" />
+		<zip destfile="${jar.name}">
+			<fileset dir="${output.classes}">
+				<include name="**/*.class" />
+			</fileset>
+			<fileset dir=".">
+				<include name="**/MANIFEST.MF" />
+			</fileset>
+		</zip>
+	</target>
+
+	<target name="deploy" depends="jar">
+		<copy file="${jar.name}" todir="../runtime-ejemplo2" />
+		<copy file="${jar.name}" todir="../runtime-ejemplo3" />
+	</target>
+
+</project>

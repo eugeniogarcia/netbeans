@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Webclient Plug-in
+Bundle-SymbolicName: sp.osgi.webinterface
+Bundle-Version: 1.0.0
+Bundle-Activator: sp.osgi.webinterface.Activator
+Bundle-Localization: plugin
+Import-Package: javax.servlet;version="2.3.0",
+ javax.servlet.http;version="2.3.0",
+ org.osgi.framework;version="1.3.0",
+ org.osgi.service.http;version="1.2.0",
+ sp.osgi.contador.servicio

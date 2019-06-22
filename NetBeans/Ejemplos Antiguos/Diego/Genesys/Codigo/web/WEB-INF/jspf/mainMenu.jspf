@@ -1,0 +1,73 @@
+<div id='menu'>
+        <ul>            
+            <div name='seccion_informes' id='menu_informes'>                    
+                Informes
+            </div>
+            <ul id='seccion_informes'>
+                <li id='intervenciones' name='Informe de Intervenciones' >
+                    <a id='intervenciones_a' name="Informe de Intervenciones" href='/vu/informes.jsp?section=intervenciones&tipoInforme=Informe de Intervenciones'>Intervenciones</a>
+                </li>
+                <li id='transferencias' name='Informe de Transferencias'>
+                        <a id='transferencias_a' name="Informe de Transferencias" href='/vu/informes.jsp?section=transferencias&tipoInforme=Informe de Transferencias'>Transferencias</a>
+                    </li>
+                    <li id='tiempo_respuesta' name="Tiempos de Respuesta">
+                        <a id='tiempo_respuesta_a' href='/vu/informes.jsp?section=tiempo_respuesta&tipoInforme=Tiempos de Respuesta'>Tiempos de Respuesta</a>
+                    </li> 
+                    <li id='atencion_servicio' name="Tiempos de Atencion de Servicio">
+
+                        <a id='atencion_servicio_a' href='/vu/informes.jsp?section=atencion_servicio&tipoInforme=Tiempos de Atencion de Servicio'>Tiempos de Atención de 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Servicio</a>
+                    </li>                   
+                    <li id='intervencion_cliente' name="Intervenciones de clientes">
+                        <a id='intervencion_cliente_a' href='/vu/informes.jsp?section=intervencion_cliente&tipoInforme=Intervenciones de clientes'>Llamadas de clientes</a>
+                    </li>                         
+                    <li id='general_intervenciones' name="Informe general de intervenciones">
+                        <a id='general_intervenciones_a' href='/vu/informes.jsp?section=general_intervenciones&tipoInforme=Informe general de intervenciones'>General de Intervenciones</a>
+                    </li> 
+                    <li id='familias' name="Familias">
+                        <a id='familias_a' href='/vu/informes.jsp?section=familias&tipoInforme=Familias'>Familias</a>
+                    </li>  
+                    <li id='tiempo_conexion' name="Tiempos de Conexion">
+                        <a id='tiempo_conexion_a' href='/vu/informes.jsp?section=tiempo_conexion&tipoInforme=Tiempos de Conexion'>Tiempos de Conexi&oacute;n</a>
+                    </li>
+                    <li id='atencion_agente' name="Tiempos de Atencion de Agente">
+                        <a id='atencion_agente_a' href='/vu/informes.jsp?section=atencion_agente&tipoInforme=Tiempos de Atencion de Agente'>Tiempos de Operaci&oacute;n de 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agente</a>
+                    </li>
+                    <li id="navegacion_ivr" name="Navegacion IVR">
+                        <a id="navegacion_ivr_a" href='/vu/informes.jsp?section=navegacion_ivr&tipoInforme=Navegacion IVR'>Navegaci&oacute;n IVR</a>
+                    </li>
+                     <li id="bloques_ivr" name="Bloques IVR">
+                        <a id="bloques_ivr_a" href='/vu/informes.jsp?section=bloques_ivr&tipoInforme=Bloques IVR'>Detalle de Bloques de IVR</a>
+                    </li>
+                </ul>
+            </li>                              
+            <div name='seccion_graficas' id='menu_graficas'>                    
+                 Gr&aacute;ficas
+            </div>
+            <ul id='seccion_graficas'>
+                    <li id='m2_1' name='Seguimiento por atencion'>
+                        <a id='m2_1_a' href='/vu/informesGrafico.jsp?section=m2_1&tipoInforme=Seguimiento por atencion'>Seguimiento de Atenci&oacute;n</a>
+                    </li>
+                    <li id='m2_2' name='Seguimiento por Modos'>
+                        <a id='m2_2_a' href='/vu/informesGrafico.jsp?section=m2_2&tipoInforme=Seguimiento por modos'>Seguimiento por Modos</a>
+                    </li>
+                     
+                </ul>
+            </li>          
+        </ul>
+    </div>   
+
+    
+<% if(section != "") {
+    String auxiliar = "intervenciones, transferencias, tiempo_respuesta, atencion_servicio, intervencion_cliente, general_intervenciones, familias, tiempo_conexion, atencion_agente, navegacion_ivr, bloques_ivr";
+    String sectionTot;    
+    if (auxiliar.indexOf(section)!=-1){
+        sectionTot = "menu_informes";
+    }else{
+        sectionTot = "menu_graficas";
+    }
+    
+%>   
+    <script>cambiarSeleccionado('<%= section+"_a" %>');</script>  
+<%}%>

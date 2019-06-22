@@ -1,0 +1,57 @@
+07/05/08 17:11:44.511 10.1.3.0.0 Started
+07/05/08 17:11:46.824 JDBC-EjercicioConWeb-webapp: 10.1.3.0.0 Started
+07/05/08 17:12:25.640 JDBC-EjercicioConWeb-webapp: Servlet error
+java.lang.NullPointerException
+	at ejercicioconweb.s1.doPost(s1.java:50)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:763)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:856)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:719)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:376)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.doProcessRequest(HttpRequestHandler.java:870)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.processRequest(HttpRequestHandler.java:451)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.serveOneRequest(HttpRequestHandler.java:218)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:119)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:112)
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run(ServerSocketReadHandler.java:260)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.procClientSocket(ServerSocketAcceptHandler.java:230)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.access$800(ServerSocketAcceptHandler.java:33)
+	at oracle.oc4j.network.ServerSocketAcceptHandler$AcceptHandlerHorse.run(ServerSocketAcceptHandler.java:831)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:595)
+07/05/08 17:14:38.901 JDBC-EjercicioConWeb-webapp: 10.1.3.0.0 Stopped
+07/05/08 17:14:39.492 10.1.3.0.0 Started
+07/05/08 17:14:42.36 JDBC-EjercicioConWeb-webapp: 10.1.3.0.0 Started
+07/05/08 17:15:22.444 JDBC-EjercicioConWeb-webapp: Servlet error
+java.lang.NullPointerException
+	at ejercicioconweb.s1.doPost(s1.java:54)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:763)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:856)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:719)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:376)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.doProcessRequest(HttpRequestHandler.java:870)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.processRequest(HttpRequestHandler.java:451)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.serveOneRequest(HttpRequestHandler.java:218)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:119)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:112)
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run(ServerSocketReadHandler.java:260)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.procClientSocket(ServerSocketAcceptHandler.java:230)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.access$800(ServerSocketAcceptHandler.java:33)
+	at oracle.oc4j.network.ServerSocketAcceptHandler$AcceptHandlerHorse.run(ServerSocketAcceptHandler.java:831)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:595)
+07/05/08 17:17:21.836 10.1.3.0.0 Started
+07/05/08 17:17:26.62 JDBC-EjercicioConWeb-webapp: 10.1.3.0.0 Started
+07/05/08 17:19:33.455 10.1.3.0.0 Started
+07/05/08 17:19:36.139 JDBC-EjercicioConWeb-webapp: 10.1.3.0.0 Started
+07/05/08 17:23:44.75 10.1.3.0.0 Started
+07/05/08 17:23:46.308 JDBC-EjercicioConWeb-webapp: 10.1.3.0.0 Started
+07/05/08 17:58:51.686 JDBC-EjercicioConWeb-webapp: 10.1.3.0.0 Stopped
+07/05/08 17:58:52.227 10.1.3.0.0 Started
+07/05/08 17:58:54.560 JDBC-EjercicioConWeb-webapp: 10.1.3.0.0 Started
+07/05/08 18:00:01.36 10.1.3.0.0 Started
+07/05/08 18:00:05.232 JDBC-EjercicioConWeb-webapp: 10.1.3.0.0 Started
+07/05/08 18:02:30.861 10.1.3.0.0 Started
+07/05/08 18:02:33.124 JDBC-EjercicioConWeb-webapp: 10.1.3.0.0 Started
+07/05/08 18:22:36.264 JDBC-EjercicioConWeb-webapp: 10.1.3.0.0 Stopped
+07/05/08 18:22:36.795 10.1.3.0.0 Started
+07/05/08 18:22:39.108 JDBC-EjercicioConWeb-webapp: 10.1.3.0.0 Started

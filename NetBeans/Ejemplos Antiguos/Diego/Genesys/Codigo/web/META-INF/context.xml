@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/vu">  
+ <!--<Resource name="jdbc/VU" auth="Container"
+              type="javax.sql.DataSource" 
+              driverClassName="sun.jdbc.odbc.JdbcOdbcDriver"
+              url="jdbc:odbc:Genesys" 
+              username="" 
+              password="" 
+              maxActive="20" maxIdle="10"
+              maxWait="60000"/>-->
+ <Resource name="jdbc/VU" auth="Container"
+              type="javax.sql.DataSource" 
+              driverClassName="oracle.jdbc.driver.OracleDriver"
+              url="jdbc:oracle:oci:@INFCCIP.TSOL.CORP" 
+              username="CCIP" 
+              password="CCIP" 
+              maxActive="20" maxIdle="10"
+              maxWait="60000"/>     
+</Context>

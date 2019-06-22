@@ -1,0 +1,21 @@
+!SESSION 2007-05-15 14:06:46.596 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0-oem
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=es_ES
+Command-line arguments:  -console
+
+!ENTRY org.eclipse.osgi 4 0 2007-05-15 14:06:46.908
+!MESSAGE Error starting bundle: initial@reference:file:org.eclipse.swt.win32.win32.x86_3.2.0.v3224.jar/
+!STACK 0
+org.osgi.framework.BundleException: A fragment bundle cannot be started: initial@reference:file:org.eclipse.swt.win32.win32.x86_3.2.0.v3224.jar/ [7]
+	at org.eclipse.osgi.framework.internal.core.BundleFragment.startWorker(BundleFragment.java:224)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:256)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startBundles(EclipseStarter.java:1094)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.loadBasicBundles(EclipseStarter.java:657)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:305)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:173)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.main(EclipseStarter.java:150)
+
+!ENTRY org.eclipse.osgi 4 0 2007-05-15 14:06:47.110
+!MESSAGE Bundle initial@reference:file:org.eclipse.swt.win32.win32.x86_3.2.0.v3224.jar/ [7] is not active.

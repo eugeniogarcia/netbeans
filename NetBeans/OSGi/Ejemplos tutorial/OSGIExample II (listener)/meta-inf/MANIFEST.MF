@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-Name: Mi Primer Cliente con Listener
+Bundle-SymbolicName: firstserviceListener
+Bundle-Version: 1.0.0
+Bundle-Description: Ejemplo de Uso de un listener de cambios en la configuración del servicio
+Bundle-Vendor: MySelf Corp.
+Bundle-Activator: de.vpe.firstserviceListener.impl.Activator
+Bundle-Category: Ejemplos
+Import-Package: org.osgi.framework,de.vpe.firstservice,org.osgi.util.tracker

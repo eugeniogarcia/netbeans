@@ -1,0 +1,256 @@
+<html xmlns:j2ee="http://java.sun.com/xml/ns/j2ee" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>rowSelector
+          (ICEfaces Custom Components)
+        </title>
+<meta name="keywords" content="$title">
+<link rel="stylesheet" type="text/css" href="../stylesheet.css" title="Style">
+</head>
+<script>
+            function asd()
+            {
+            parent.document.title="rowSelector (ICEfaces Custom Components)";
+            }
+          </script>
+<body bgcolor="white" onload="asd();">
+<a name="navbar_top"></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td COLSPAN="3" BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><a NAME="navbar_top_firstrow"></a>
+<table BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<tr ALIGN="center" VALIGN="top">
+<td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="tld-summary.html"><font CLASS="NavBarFont1"><b>Library</b></font></a>&nbsp;</td><td BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Tag&nbsp;</font>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ALIGN="right" VALIGN="top" ROWSPAN="3"><em></em></td>
+</tr>
+<tr>
+<td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2"></font></td><td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2">
+                &nbsp;<a HREF="../index.html" TARGET="_top"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a href="rowSelector.html" target="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a HREF="../alltags-noframe.html" TARGET=""><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<h2>
+<font size="-1">ICEfaces Component Suite</font>
+<br>
+            Tag rowSelector</h2>
+<hr>
+      The Row Selector tag enables row selection for DataTables. The Row Selector has the following
+attributes
+<ul>
+  <li><b>clickedRow</b> The row index of the last (de)selected row. Settable ValueBinding.</li>
+  <li><b>multiple</b> When true, more then one row can be selected. Default is false.</li>
+  <li><b>mouseOverClass</b> The CSS style to apply when the mouse is over an unselected row.</li>
+  <li><b>selectedClass</b> The CSS style to apply when a row is selected.</li>
+  <li><b>selectedMouseOverClass</b> The CSS style to apply when the mouse is over a selected row.</li>
+  <li><b>selectionAction</b> The Action method to call when a row is clicked. Done after the selectionListener.</li>
+  <li><b>selectionListener</b> The listener method to call when a row is clicked.</li>
+  <li><b>toggleOnClick</b> Do row selection on mouse click. Default is true.</li>
+  <li><b>toggleOnInput</b> Do row selection, even when interacting with input field in table cell. Default is true.</li>
+  <li><b>value</b> The boolean value that indicates this row is selected. This value should be defined
+  in the 'var' of the dataTable. Required.</li>
+</ul>
+    <br>
+<p></p>
+<hr>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="2"><font size="+2"><b>Tag Information</b></font></td>
+</tr>
+<tr>
+<td>Tag Class</td><td>com.icesoft.faces.component.RowSelectorTag</td>
+</tr>
+<tr>
+<td>TagExtraInfo Class</td><td><i>None</i></td>
+</tr>
+<tr>
+<td>Body Content</td><td>JSP</td>
+</tr>
+<tr>
+<td>Display Name</td><td><i>None</i></td>
+</tr>
+</table>
+<br>
+<p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="5"><font size="+2"><b>Attributes</b></font></td>
+</tr>
+<tr>
+<td><b>Name</b></td><td><b>Required</b></td><td><b>Request-time</b></td><td><b>Type</b></td><td><b>Description</b></td>
+</tr>
+<tr valign="top">
+<td>binding</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        The value binding expression linking this component to a property in a backing bean
+      </td>
+</tr>
+<tr valign="top">
+<td>clickedRow</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        <p>
+           The table row that was last clicked. Setting this to some value will not effect row selection.
+                </p>
+      </td>
+</tr>
+<tr valign="top">
+<td>id</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+  			The component identifier for this component. This value must be 
+  			unique within the closest parent component that is a naming 
+  			container.
+      </td>
+</tr>
+<tr valign="top">
+<td>immediate</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        <p>If true, the selectionListener and selectionAction will be 
+        executed immediately, during Apply Request Values phase of the request 
+        processing lifecycle, and if false, during the Invoke Application phase. 
+        The default value is true, for backwards compatibility.</p>
+      </td>
+</tr>
+<tr valign="top">
+<td>mouseOverClass</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        <p>
+				 This method has been deprecated in 1.6. Please use the styleClass
+				 instead.
+                </p>
+      </td>
+</tr>
+<tr valign="top">
+<td>multiple</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        <p> When true, more then one row can be selected. Default is false.
+                </p>
+      </td>
+</tr>
+<tr valign="top">
+<td>rendered</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+  			Flag indicating whether or not this component should be rendered 
+  			(during Render Response Phase), or processed on any subsequent form 
+  			submit.
+      </td>
+</tr>
+<tr valign="top">
+<td>selectedClass</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        <p>
+				 This method has been deprecated in 1.6. Please use the styleClass
+				 instead.
+                </p>
+      </td>
+</tr>
+<tr valign="top">
+<td>selectedMouseOverClass</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        <p>
+				 This method has been deprecated in 1.6. Please use the styleClass
+				 instead.
+                </p>
+      </td>
+</tr>
+<tr valign="top">
+<td>selectionAction</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        <p>
+             Action method to call when a row is clicked
+                </p>
+      </td>
+</tr>
+<tr valign="top">
+<td>selectionListener</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        <p>
+             Listener method to call with a RowSelectorEvent when a row is (de)selected 
+                </p>
+      </td>
+</tr>
+<tr valign="top">
+<td>styleClass</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        <p>
+              Space-separated list of CSS style class(es) to be applied when this
+              element is rendered. This value must be passed through as the 
+              "class" attribute on generated markup.<br/>
+                Default value is <b>iceRowSel</b>:<br/>        
+               Style Classes Used:
+                     <ul>
+                       <li>iceRowSelMouseOver</li>
+                       <li>iceRowSelSelected</li>                      
+                       <li>iceRowSelSelectedMouseOver</li> 
+                     </ul>  
+                </p>
+      </td>
+</tr>
+<tr valign="top">
+<td>toggleOnClick</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        <p>
+		Do row selection on mouse click. When false, row (de)selection will not 
+        happen when the user clicks on a table row. Default value is true.
+                </p>
+      </td>
+</tr>
+<tr valign="top">
+<td>toggleOnInput</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        <p>
+		Do row selection, even when the user clicks on an input field or link 
+		in a table cell. Default value is true. When false, row (de)selection
+		will not happen when the user clicks inside an input field, list,
+		menu, button, or link.</p> 
+      </td>
+</tr>
+<tr valign="top">
+<td>value</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        <p>A ValueBinding to a per dataTable row java.lang.Boolean 
+		property, which determines if that row is selected. Typically the 
+		ValueBinding refers to a property of the dataTable's <i>var</i>
+		attribute, but another strategy is to use a smart java.util.Map to 
+		centrally maintain the selection state.</p>
+      </td>
+</tr>
+</table>
+<br>
+<p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="5"><font size="+2"><b>Variables</b></font></td>
+</tr>
+<td colspan="2"><i>No Variables Defined.</i></td>
+</table>
+<br>
+<p></p>
+<a name="navbar_bottom"></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td COLSPAN="3" BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><a NAME="navbar_bottom_firstrow"></a>
+<table BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<tr ALIGN="center" VALIGN="top">
+<td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="tld-summary.html"><font CLASS="NavBarFont1"><b>Library</b></font></a>&nbsp;</td><td BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Tag&nbsp;</font>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ALIGN="right" VALIGN="top" ROWSPAN="3"><em></em></td>
+</tr>
+<tr>
+<td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2"></font></td><td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2">
+                &nbsp;<a HREF="../index.html" TARGET="_top"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a href="rowSelector.html" target="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a HREF="../alltags-noframe.html" TARGET=""><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<small><i>
+            Output Generated by 
+            <a href="http://taglibrarydoc.dev.java.net/" target="_blank">Tag Library Documentation Generator</a>.
+            Java, JSP, and JavaServer Pages are trademarks or 
+            registered trademarks of Sun Microsystems, Inc. in the US and other
+            countries.  Copyright 2002-4 Sun Microsystems, Inc.
+            4150 Network Circle
+            Santa Clara, CA 95054, U.S.A.
+            All Rights Reserved. 
+            </i></small>
+</body>
+</html>

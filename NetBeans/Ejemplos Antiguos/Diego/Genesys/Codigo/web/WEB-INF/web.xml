@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <servlet>
+        <servlet-name>GenerarInforme</servlet-name>
+        <servlet-class>com.tid.vu.GenerarInforme</servlet-class>
+        <init-param>
+            <param-name>fichero_properties</param-name>
+            <param-value>D:/Documents and Settings/t610908/genesis/src/conf/configuracion.properties</param-value>
+        </init-param>        
+        <load-on-startup>1</load-on-startup>
+        </servlet>
+    <servlet>
+        <servlet-name>crearPDF</servlet-name>
+        <servlet-class>com.tid.vu.pdf.crearPDF</servlet-class>       
+        </servlet>
+    <servlet-mapping>
+        <servlet-name>GenerarInforme</servlet-name>
+        <url-pattern>/GenerarInforme</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>crearPDF</servlet-name>
+        <url-pattern>/crearPDF</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+	<welcome-file>
+            index.jsp
+        </welcome-file>
+    </welcome-file-list> 
+    <resource-ref>
+      <description>Conexion a Base de Datos</description>
+      <res-ref-name>jdbc/VU</res-ref-name>
+      <res-type>javax.sql.DataSource</res-type>
+      <res-auth>Container</res-auth>
+    </resource-ref>
+    </web-app>

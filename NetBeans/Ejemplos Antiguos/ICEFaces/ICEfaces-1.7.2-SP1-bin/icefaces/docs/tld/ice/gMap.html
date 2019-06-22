@@ -1,0 +1,228 @@
+<html xmlns:j2ee="http://java.sun.com/xml/ns/j2ee" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gMap
+          (ICEfaces Custom Components)
+        </title>
+<meta name="keywords" content="$title">
+<link rel="stylesheet" type="text/css" href="../stylesheet.css" title="Style">
+</head>
+<script>
+            function asd()
+            {
+            parent.document.title="gMap (ICEfaces Custom Components)";
+            }
+          </script>
+<body bgcolor="white" onload="asd();">
+<a name="navbar_top"></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td COLSPAN="3" BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><a NAME="navbar_top_firstrow"></a>
+<table BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<tr ALIGN="center" VALIGN="top">
+<td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="tld-summary.html"><font CLASS="NavBarFont1"><b>Library</b></font></a>&nbsp;</td><td BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Tag&nbsp;</font>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ALIGN="right" VALIGN="top" ROWSPAN="3"><em></em></td>
+</tr>
+<tr>
+<td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2"></font></td><td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2">
+                &nbsp;<a HREF="../index.html" TARGET="_top"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a href="gMap.html" target="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a HREF="../alltags-noframe.html" TARGET=""><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<h2>
+<font size="-1">ICEfaces Component Suite</font>
+<br>
+            Tag gMap</h2>
+<hr>
+      
+                   This component uses the version 2 of the Google Maps API. In
+                   order to use the google maps, an API key is required. The API
+                   key can be obtained from the google maps' website. You must need to specify
+                   the API key in the web.xml(e.g.)<br/>
+                   &lt;context-param&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&lt;param-name&gt;com.icesoft.faces.gmapKey&lt;/param-name&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&lt;param-value&gt;ABQIAAAADlu0Z........&lt;/param-value&gt;<br/>
+                   &lt;/context-param&gt;
+    <br>
+<p></p>
+<hr>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="2"><font size="+2"><b>Tag Information</b></font></td>
+</tr>
+<tr>
+<td>Tag Class</td><td>com.icesoft.faces.component.gmap.GMapTag</td>
+</tr>
+<tr>
+<td>TagExtraInfo Class</td><td><i>None</i></td>
+</tr>
+<tr>
+<td>Body Content</td><td>JSP</td>
+</tr>
+<tr>
+<td>Display Name</td><td><i>None</i></td>
+</tr>
+</table>
+<br>
+<p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="5"><font size="+2"><b>Attributes</b></font></td>
+</tr>
+<tr>
+<td><b>Name</b></td><td><b>Required</b></td><td><b>Request-time</b></td><td><b>Type</b></td><td><b>Description</b></td>
+</tr>
+<tr valign="top">
+<td>address</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        The ice:GMap component can locate an address on the map, using the GClientGeocoder implicitly.
+        <br/>(e.g.) To render a map with the default location.<br/>
+         &lt;ice:GMap address="Calgary"/&gt;
+         <br/><br/>
+         To locate the address dynamically, the address needs to be bind with the bean and "locateAddress" attribute needs to return "true", when map needs to be located (e.g.)<br/>
+
+         &lt;ice:inputText value="#{gmap.address}" valueChangeListener="#{gmap.addressChanged}" /&gt;<br/>
+         &lt;ice:GMap address="#{gmap.address}" locateAddress="#{gmap.locateAddress}"/&gt;<br/><br/>
+         Note: The valueChangeListener sets the value of the "locateAddress" to true of false, that causes the address to be locate on the google map.
+      </td>
+</tr>
+<tr valign="top">
+<td>binding</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        The value binding expression linking this component to a property in a backing bean
+      </td>
+</tr>
+<tr valign="top">
+<td>id</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+  			The component identifier for this component. This value must be 
+  			unique within the closest parent component that is a naming 
+  			container.
+      </td>
+</tr>
+<tr valign="top">
+<td>latitude</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        The latitude of the Map    
+      </td>
+</tr>
+<tr valign="top">
+<td>locateAddress</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        This attribute tells to the map to locate the address if set to true.        
+      </td>
+</tr>
+<tr valign="top">
+<td>longitude</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        The longitude of the Map
+      </td>
+</tr>
+<tr valign="top">
+<td>rendered</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+  			Flag indicating whether or not this component should be rendered 
+  			(during Render Response Phase), or processed on any subsequent form 
+  			submit.
+      </td>
+</tr>
+<tr valign="top">
+<td>renderedOnUserRole</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+
+		If user is in given role, this component will be rendered
+		normally. If not, nothing is rendered and the body of this tag
+		will be skipped.
+      </td>
+</tr>
+<tr valign="top">
+<td>style</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        CSS style(s) to be applied when this component is rendered.
+      </td>
+</tr>
+<tr valign="top">
+<td>styleClass</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        Space-separated list of CSS style class(es) to be applied when this element is rendered. This value must be passed through as the "class" attribute on generated markup.
+        <br/><br/>
+        The base name for all style classes. Default value is iceGmp        
+        <ul>
+            <li>iceGmpMapTd (this class will apply on the td, that contains the google map)</li>
+            <li>iceGmpTxtTd (this class will apply on the td, that contains the default textual div used by GDirection component</li>
+        <ul>
+      </td>
+</tr>
+<tr valign="top">
+<td>type</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        Type of the map. The following are the valid values:
+        <ul>
+           <li>Satellite</li>
+           <li>Hybrid</li>
+           <li>Map</li>
+        </ul>  
+        To render a map in Statellite view: <br/>
+        &lt;ice:GMap type="Satellite" address="Calgary" /&gt;   
+      </td>
+</tr>
+<tr valign="top">
+<td>zoomLevel</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+    Set the zoom level of the map
+        &lt;ice:GMap zoomLevel="6"  /&gt;   
+      </td>
+</tr>
+</table>
+<br>
+<p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="5"><font size="+2"><b>Variables</b></font></td>
+</tr>
+<td colspan="2"><i>No Variables Defined.</i></td>
+</table>
+<br>
+<p></p>
+<a name="navbar_bottom"></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td COLSPAN="3" BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><a NAME="navbar_bottom_firstrow"></a>
+<table BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<tr ALIGN="center" VALIGN="top">
+<td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="tld-summary.html"><font CLASS="NavBarFont1"><b>Library</b></font></a>&nbsp;</td><td BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Tag&nbsp;</font>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ALIGN="right" VALIGN="top" ROWSPAN="3"><em></em></td>
+</tr>
+<tr>
+<td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2"></font></td><td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2">
+                &nbsp;<a HREF="../index.html" TARGET="_top"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a href="gMap.html" target="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a HREF="../alltags-noframe.html" TARGET=""><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<small><i>
+            Output Generated by 
+            <a href="http://taglibrarydoc.dev.java.net/" target="_blank">Tag Library Documentation Generator</a>.
+            Java, JSP, and JavaServer Pages are trademarks or 
+            registered trademarks of Sun Microsystems, Inc. in the US and other
+            countries.  Copyright 2002-4 Sun Microsystems, Inc.
+            4150 Network Circle
+            Santa Clara, CA 95054, U.S.A.
+            All Rights Reserved. 
+            </i></small>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+   Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+   You may not modify, use, reproduce, or distribute this
+   software except in compliance with the terms of the License at:
+  
+     http://developer.sun.com/berkeley_license.html
+  
+   $Id: complib-config.xml,v 1.3 2007/04/24 12:02:28 mb151649 Exp $
+-->
+
+<complibConfiguration version="1.0"
+       resourceBundleBaseName="META-INF.complib-bundle">
+
+  <identifier>
+    <uri>http://www.sun.com/rave/dynamicfaces</uri>
+    <version>0.2</version>
+  </identifier>
+  <titleKey>titleKey</titleKey>
+  <runtimePath>
+<!-- Note: we must include the jsf-extensions-dynamic-faces-0.1.jar and jsf-extensions-common-0.1.jar.
+Woodstock will not put them in the project build dir for an ee4 project. -->
+    <pathElement>jsf-extensions-dynamic-faces-0.1.jar</pathElement>
+    <pathElement>jsf-extensions-common-0.1.jar</pathElement>
+    <pathElement>shale-remoting.jar</pathElement>
+    <pathElement>dynamicfaces.jar</pathElement>
+    <pathElement>commons-logging-1.1.jar</pathElement>
+  </runtimePath>
+  <designTimePath
+           prependRuntimePath="true">
+    <pathElement>dynamicfaces-dt.jar</pathElement>
+<!-- do not include. already in vwp.
+    <pathElement>designtimeext.jar</pathElement>
+-->
+  </designTimePath>
+  <javadocPath>
+    <pathElement>dynamicfaces-doc.zip</pathElement>
+  </javadocPath>
+  <sourcePath>
+<!-- no longer including dynamic faces sources, since we are trying to use the same dynamic faces jars as woodstock
+    <pathElement>jsf-extensions-dynamic-faces-0.1-sources.jar</pathElement>
+    <pathElement>jsf-extensions-common-0.1-sources.jar</pathElement>
+-->
+  </sourcePath>
+  <initialPalette>
+    <folder key="folder1Key">
+      <item         className="com.sun.faces.extensions.avatar.components.AjaxZone"/>
+      <item         className="com.sun.faces.extensions.avatar.components.AjaxTransaction"/>
+    </folder>
+  </initialPalette>
+
+</complibConfiguration>

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-Name: dateservice
+Bundle-SymbolicName: dateservice
+Bundle-Version: 1.0.0
+Bundle-Description: Ejemplo que muestra cómo un bundle exporta un servicio consumible por otros bundles
+Bundle-Vendor: Revista Sólo Programadores
+Bundle-Activator: es.solop.dateservice.impl.Activator
+Import-Package: org.osgi.framework
+Export-Package: es.solop.dateservice
+

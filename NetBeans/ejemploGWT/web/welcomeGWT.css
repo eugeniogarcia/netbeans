@@ -1,0 +1,28 @@
+/* 
+    Document   : welcomeGWT
+    Created on : 06-feb-2010, 20:25:09
+    Author     : Leihta
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.miEtiqueta{
+    color: white;
+    display: block;
+    width: 450px;
+    padding: 2px 4px;
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: 1px solid;
+    border-color: black;
+    background-color: #704968;
+    text-decoration: none;
+}
+

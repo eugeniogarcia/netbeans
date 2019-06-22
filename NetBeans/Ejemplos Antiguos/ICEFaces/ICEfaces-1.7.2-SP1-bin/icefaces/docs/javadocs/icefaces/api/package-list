@@ -1,0 +1,6 @@
+com.icesoft.faces.async.render
+com.icesoft.faces.context
+com.icesoft.faces.context.effects
+com.icesoft.faces.renderkit.dom_html_basic
+com.icesoft.faces.webapp.xmlhttp
+org.icefaces.x.core.push

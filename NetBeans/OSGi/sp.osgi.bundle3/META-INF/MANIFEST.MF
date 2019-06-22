@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Bundle3 Plug-in
+Bundle-SymbolicName: sp.osgi.bundle3
+Bundle-Version: 1.1.0
+Bundle-Localization: plugin
+Export-Package: sp.osgi.bundle3.paquete3

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<project name="OSGIExample-impl" default="all" basedir=".." >
+
+<target name="all" depends="init,compile,jar"/>
+
+<target name="init">
+<mkdir dir="./dist"/>
+<mkdir dir="./build"/>
+</target>
+
+<target name="compile" >
+<javac destdir = "./dist"
+debug = "on"
+srcdir = "./src"
+classpath="D:\Program Files\knopflerfish_osgi_2.3.3\knopflerfish.org\osgi\framework.jar"
+>
+</javac>
+</target>
+
+<target name="jar" depends="init,compile">
+<jar basedir = "./dist"
+jarfile = "./build/OSGIExample.jar"
+compress = "true"
+includes = "**/*"
+manifest = "./meta-inf/MANIFEST.MF"/>
+</target>
+
+<target name="clean">
+<delete dir = "./dist"/>
+<delete dir = "./build"/>
+</target>
+
+</project>
+
+

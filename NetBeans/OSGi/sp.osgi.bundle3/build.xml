@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="deploy" name="build">
+	<property name="base" value=".." />
+
+	<property name="plugin.name.b3" value="sp.osgi.bundle3" />
+	<property name="plugin.version.b3" value="1.1.0" />
+	<property name="base.b3" value="${base}/${plugin.name.b3}" />
+	<property name="src.b3" value="${base.b3}/src" />
+	<property name="output.classes.b3" value="${base.b3}/bin" />
+	<property name="output.jar.b3" value="${base.b3}/export" />
+	<property name="jar.name.b3" value="${output.jar.b3}/${plugin.name.b3}_${plugin.version.b3}.jar" />
+
+
+	<target name="compile.b3">
+		<mkdir dir="${output.classes.b3}" />
+		<javac srcdir="${src.b3}" destdir="${output.classes.b3}" debug="off" />
+	</target>
+
+	<target name="jar.b3" depends="compile.b3">
+		<delete file="${jar.name.b3}" failonerror="false" />
+		<mkdir dir="${output.jar.b3}" />
+		<zip destfile="${jar.name.b3}">
+			<fileset dir="${output.classes.b3}">
+				<include name="**/*.class" />
+			</fileset>
+			<fileset dir="${base.b3}">
+				<include name="**/MANIFEST.MF" />
+			</fileset>
+		</zip>
+	</target>
+
+	<target name="deploy" depends="jar.b3">
+		<copy file="${jar.name.b3}" todir="../runtime-ejemplo1" />
+	</target>
+
+</project>

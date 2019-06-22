@@ -1,0 +1,294 @@
+07/05/07 18:43:57.269 10.1.3.0.0 Started
+07/05/07 18:43:58.310 JSP-Ejemplo1-webapp: 10.1.3.0.0 Started
+07/05/07 18:48:55.678 JSP-Ejemplo1-webapp: 10.1.3.0.0 Stopped
+07/05/07 18:48:56.168 10.1.3.0.0 Started
+07/05/07 18:48:57.10 JSP-Ejemplo2-webapp: 10.1.3.0.0 Started
+07/05/07 18:49:33.432 JSP-Ejemplo2-webapp: 10.1.3.0.0 Stopped
+07/05/07 18:49:33.773 10.1.3.0.0 Started
+07/05/07 18:49:34.734 JSP-Ejemplo2-webapp: 10.1.3.0.0 Started
+07/05/07 18:58:12.118 JSP-Ejemplo2-webapp: 10.1.3.0.0 Stopped
+07/05/07 18:58:12.508 10.1.3.0.0 Started
+07/05/07 18:58:13.580 JSP-Ejemplo3-webapp: 10.1.3.0.0 Started
+07/05/08 11:02:36.271 10.1.3.0.0 Started
+07/05/08 11:02:39.195 JSP-Javabean-webapp: 10.1.3.0.0 Started
+07/05/08 11:02:39.265 JSP-Javabean-webapp: Servlet error
+java.lang.NullPointerException
+	at javabean.operacion.getRes(operacion.java:27)
+	at _calcular._jspService(_calcular.java:73)
+	at com.orionserver[Oracle Containers for J2EE 10g (10.1.3.0.0) ].http.OrionHttpJspPage.service(OrionHttpJspPage.java:60)
+	at oracle.jsp.runtimev2.JspPageTable.service(JspPageTable.java:416)
+	at oracle.jsp.runtimev2.JspServlet.internalService(JspServlet.java:478)
+	at oracle.jsp.runtimev2.JspServlet.service(JspServlet.java:401)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:856)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:719)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:376)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.doProcessRequest(HttpRequestHandler.java:870)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.processRequest(HttpRequestHandler.java:451)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.serveOneRequest(HttpRequestHandler.java:218)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:119)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:112)
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run(ServerSocketReadHandler.java:260)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.procClientSocket(ServerSocketAcceptHandler.java:230)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.access$800(ServerSocketAcceptHandler.java:33)
+	at oracle.oc4j.network.ServerSocketAcceptHandler$AcceptHandlerHorse.run(ServerSocketAcceptHandler.java:831)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:298)
+	at java.lang.Thread.run(Thread.java:595)
+07/05/08 11:03:10.851 JSP-Javabean-webapp: 10.1.3.0.0 Stopped
+07/05/08 11:03:11.442 10.1.3.0.0 Started
+07/05/08 11:03:13.775 JSP-Javabean-webapp: 10.1.3.0.0 Started
+07/05/08 11:29:01.931 10.1.3.0.0 Started
+07/05/08 11:29:04.275 JSP-Javabean-webapp: 10.1.3.0.0 Started
+07/05/08 11:29:12.637 JSP-Javabean-webapp: Servlet error
+java.lang.IllegalArgumentException: path must begin with a "/"
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpApplication.getRequestDispatcher(HttpApplication.java:1532)
+	at javabean.s1.doPost(s1.java:36)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:763)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:856)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:719)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:376)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.doProcessRequest(HttpRequestHandler.java:870)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.processRequest(HttpRequestHandler.java:451)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.serveOneRequest(HttpRequestHandler.java:218)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:119)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:112)
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run(ServerSocketReadHandler.java:260)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.procClientSocket(ServerSocketAcceptHandler.java:230)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.access$800(ServerSocketAcceptHandler.java:33)
+	at oracle.oc4j.network.ServerSocketAcceptHandler$AcceptHandlerHorse.run(ServerSocketAcceptHandler.java:831)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:595)
+07/05/08 11:30:30.909 JSP-Javabean-webapp: 10.1.3.0.0 Stopped
+07/05/08 11:30:31.400 10.1.3.0.0 Started
+07/05/08 11:30:33.613 JSP-Javabean-webapp: 10.1.3.0.0 Started
+07/05/08 11:30:41.524 JSP-Javabean-webapp: Servlet error
+java.lang.NullPointerException
+	at javabean.operacion.getRes(operacion.java:27)
+	at _calcular._jspService(_calcular.java:52)
+	at com.orionserver[Oracle Containers for J2EE 10g (10.1.3.0.0) ].http.OrionHttpJspPage.service(OrionHttpJspPage.java:60)
+	at oracle.jsp.runtimev2.JspPageTable.service(JspPageTable.java:416)
+	at oracle.jsp.runtimev2.JspServlet.internalService(JspServlet.java:478)
+	at oracle.jsp.runtimev2.JspServlet.service(JspServlet.java:401)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:856)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:719)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:376)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.unprivileged_forward(ServletRequestDispatcher.java:270)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.access$100(ServletRequestDispatcher.java:42)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher$2.oc4jRun(ServletRequestDispatcher.java:205)
+	at oracle.oc4j.security.OC4JSecurity.doPrivileged(OC4JSecurity.java:283)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.forward(ServletRequestDispatcher.java:209)
+	at javabean.s1.doPost(s1.java:36)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:763)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:856)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:719)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:376)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.doProcessRequest(HttpRequestHandler.java:870)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.processRequest(HttpRequestHandler.java:451)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.serveOneRequest(HttpRequestHandler.java:218)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:119)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:112)
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run(ServerSocketReadHandler.java:260)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.procClientSocket(ServerSocketAcceptHandler.java:230)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.access$800(ServerSocketAcceptHandler.java:33)
+	at oracle.oc4j.network.ServerSocketAcceptHandler$AcceptHandlerHorse.run(ServerSocketAcceptHandler.java:831)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:595)
+07/05/08 11:31:45.96 JSP-Javabean-webapp: 10.1.3.0.0 Stopped
+07/05/08 11:31:45.526 10.1.3.0.0 Started
+07/05/08 11:31:47.890 JSP-Javabean-webapp: 10.1.3.0.0 Started
+07/05/08 11:31:51.906 JSP-Javabean-webapp: Servlet error
+java.lang.NullPointerException
+	at javabean.operacion.getRes(operacion.java:27)
+	at _calcular._jspService(_calcular.java:52)
+	at com.orionserver[Oracle Containers for J2EE 10g (10.1.3.0.0) ].http.OrionHttpJspPage.service(OrionHttpJspPage.java:60)
+	at oracle.jsp.runtimev2.JspPageTable.service(JspPageTable.java:416)
+	at oracle.jsp.runtimev2.JspServlet.internalService(JspServlet.java:478)
+	at oracle.jsp.runtimev2.JspServlet.service(JspServlet.java:401)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:856)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:719)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:376)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.unprivileged_forward(ServletRequestDispatcher.java:270)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.access$100(ServletRequestDispatcher.java:42)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher$2.oc4jRun(ServletRequestDispatcher.java:205)
+	at oracle.oc4j.security.OC4JSecurity.doPrivileged(OC4JSecurity.java:283)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.forward(ServletRequestDispatcher.java:209)
+	at javabean.s1.doPost(s1.java:37)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:763)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:856)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:719)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:376)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.doProcessRequest(HttpRequestHandler.java:870)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.processRequest(HttpRequestHandler.java:451)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.serveOneRequest(HttpRequestHandler.java:218)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:119)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:112)
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run(ServerSocketReadHandler.java:260)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:595)
+07/05/08 11:40:15.9 JSP-Javabean-webapp: 10.1.3.0.0 Stopped
+07/05/08 11:40:15.289 10.1.3.0.0 Started
+07/05/08 11:40:17.673 JSP-Javabean-webapp: 10.1.3.0.0 Started
+07/05/08 11:40:22.740 JSP-Javabean-webapp: Servlet error
+java.lang.NullPointerException
+	at javabean.operacion.getRes(operacion.java:27)
+	at _calcular._jspService(_calcular.java:54)
+	at com.orionserver[Oracle Containers for J2EE 10g (10.1.3.0.0) ].http.OrionHttpJspPage.service(OrionHttpJspPage.java:60)
+	at oracle.jsp.runtimev2.JspPageTable.service(JspPageTable.java:416)
+	at oracle.jsp.runtimev2.JspServlet.internalService(JspServlet.java:478)
+	at oracle.jsp.runtimev2.JspServlet.service(JspServlet.java:401)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:856)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:719)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:376)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.unprivileged_forward(ServletRequestDispatcher.java:270)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.access$100(ServletRequestDispatcher.java:42)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher$2.oc4jRun(ServletRequestDispatcher.java:205)
+	at oracle.oc4j.security.OC4JSecurity.doPrivileged(OC4JSecurity.java:283)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.forward(ServletRequestDispatcher.java:209)
+	at javabean.s1.doPost(s1.java:37)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:763)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:856)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:719)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:376)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.doProcessRequest(HttpRequestHandler.java:870)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.processRequest(HttpRequestHandler.java:451)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.serveOneRequest(HttpRequestHandler.java:218)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:119)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:112)
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run(ServerSocketReadHandler.java:260)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.procClientSocket(ServerSocketAcceptHandler.java:230)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.access$800(ServerSocketAcceptHandler.java:33)
+	at oracle.oc4j.network.ServerSocketAcceptHandler$AcceptHandlerHorse.run(ServerSocketAcceptHandler.java:831)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:595)
+07/05/08 11:40:52.934 10.1.3.0.0 Started
+07/05/08 11:40:57.110 JSP-Javabean-webapp: 10.1.3.0.0 Started
+07/05/08 11:44:48.582 10.1.3.0.0 Started
+07/05/08 11:44:52.778 JSP-Javabean-webapp: 10.1.3.0.0 Started
+07/05/08 11:45:36.932 10.1.3.0.0 Started
+07/05/08 11:45:39.245 JSP-Javabean-webapp: 10.1.3.0.0 Started
+07/05/08 12:55:58.589 10.1.3.0.0 Started
+07/05/08 12:56:00.892 JSP-FrontControler-webapp: 10.1.3.0.0 Started
+07/05/08 12:56:07.512 JSP-FrontControler-webapp: Servlet error
+java.lang.NullPointerException
+	at frontcontroler.entrada.doPost(entrada.java:50)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:763)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:856)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:719)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:376)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.doProcessRequest(HttpRequestHandler.java:870)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.processRequest(HttpRequestHandler.java:451)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.serveOneRequest(HttpRequestHandler.java:218)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:119)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:112)
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run(ServerSocketReadHandler.java:260)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.procClientSocket(ServerSocketAcceptHandler.java:230)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.access$800(ServerSocketAcceptHandler.java:33)
+	at oracle.oc4j.network.ServerSocketAcceptHandler$AcceptHandlerHorse.run(ServerSocketAcceptHandler.java:831)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:595)
+07/05/08 12:56:30.154 10.1.3.0.0 Started
+07/05/08 12:56:34.711 JSP-FrontControler-webapp: 10.1.3.0.0 Started
+07/05/08 12:58:03.108 10.1.3.0.0 Started
+07/05/08 12:58:07.544 JSP-FrontControler-webapp: 10.1.3.0.0 Started
+07/05/08 12:58:33.512 JSP-FrontControler-webapp: Servlet error
+java.lang.NullPointerException
+	at frontcontroler.entrada.doPost(entrada.java:50)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:763)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:856)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:719)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:376)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.doProcessRequest(HttpRequestHandler.java:870)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.processRequest(HttpRequestHandler.java:451)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.serveOneRequest(HttpRequestHandler.java:218)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:119)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:112)
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run(ServerSocketReadHandler.java:260)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.procClientSocket(ServerSocketAcceptHandler.java:230)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.access$800(ServerSocketAcceptHandler.java:33)
+	at oracle.oc4j.network.ServerSocketAcceptHandler$AcceptHandlerHorse.run(ServerSocketAcceptHandler.java:831)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:595)
+07/05/08 12:58:52.519 10.1.3.0.0 Started
+07/05/08 12:58:54.983 JSP-FrontControler-webapp: 10.1.3.0.0 Started
+07/05/08 13:01:06.602 JSP-FrontControler-webapp: 10.1.3.0.0 Stopped
+07/05/08 13:01:06.922 10.1.3.0.0 Started
+07/05/08 13:01:09.105 JSP-FrontControler-webapp: 10.1.3.0.0 Started
+07/05/08 13:02:50.561 JSP-FrontControler-webapp: 10.1.3.0.0 Stopped
+07/05/08 13:02:50.962 10.1.3.0.0 Started
+07/05/08 13:02:53.415 JSP-FrontControler-webapp: 10.1.3.0.0 Started
+07/05/08 13:04:19.870 JSP-FrontControler-webapp: 10.1.3.0.0 Stopped
+07/05/08 13:04:20.140 10.1.3.0.0 Started
+07/05/08 13:04:22.484 JSP-FrontControler-webapp: 10.1.3.0.0 Started
+07/05/08 13:05:28.839 10.1.3.0.0 Started
+07/05/08 13:05:33.345 JSP-FrontControler-webapp: 10.1.3.0.0 Started
+07/05/08 13:08:20.205 10.1.3.0.0 Started
+07/05/08 13:08:22.689 JSP-FrontControler-webapp: 10.1.3.0.0 Started
+07/05/08 13:10:04.225 JSP-FrontControler-webapp: 10.1.3.0.0 Stopped
+07/05/08 13:10:04.686 10.1.3.0.0 Started
+07/05/08 13:10:06.879 JSP-FrontControler-webapp: 10.1.3.0.0 Started
+07/05/09 10:53:18.538 10.1.3.0.0 Started
+07/05/09 10:53:22.183 JSP-EtiquetasPropias-webapp: 10.1.3.0.0 Started
+07/05/09 11:01:21.352 10.1.3.0.0 Started
+07/05/09 11:01:23.765 JSP-EtiquetasPropias-webapp: 10.1.3.0.0 Started
+07/05/09 11:05:15.729 JSP-EtiquetasPropias-webapp: 10.1.3.0.0 Stopped
+07/05/09 11:05:16.260 10.1.3.0.0 Started
+07/05/09 11:05:18.633 JSP-EtiquetasPropias-webapp: 10.1.3.0.0 Started
+07/05/09 11:05:30.0 JSP-EtiquetasPropias-webapp: 10.1.3.0.0 Stopped
+07/05/09 11:05:30.290 10.1.3.0.0 Started
+07/05/09 11:05:32.763 JSP-EtiquetasPropias-webapp: 10.1.3.0.0 Started
+07/05/09 11:07:04.565 JSP-EtiquetasPropias-webapp: 10.1.3.0.0 Stopped
+07/05/09 11:07:04.856 10.1.3.0.0 Started
+07/05/09 11:07:07.259 JSP-EtiquetasPropias-webapp: 10.1.3.0.0 Started
+07/05/09 11:07:44.52 JSP-EtiquetasPropias-webapp: 10.1.3.0.0 Stopped
+07/05/09 11:07:44.363 10.1.3.0.0 Started
+07/05/09 11:07:47.7 JSP-EtiquetasPropias-webapp: 10.1.3.0.0 Started
+07/05/09 11:08:03.280 JSP-EtiquetasPropias-webapp: 10.1.3.0.0 Stopped
+07/05/09 11:08:03.590 10.1.3.0.0 Started
+07/05/09 11:08:05.904 JSP-EtiquetasPropias-webapp: 10.1.3.0.0 Started
+07/05/09 11:18:38.413 JSP-EtiquetasPropias-webapp: 10.1.3.0.0 Stopped
+07/05/09 11:18:39.124 10.1.3.0.0 Started
+07/05/09 11:18:41.387 JSP-EtiquetasPropias-webapp: 10.1.3.0.0 Started
+07/05/09 11:18:57.601 JSP-EtiquetasPropias-webapp: 10.1.3.0.0 Stopped
+07/05/09 11:18:58.31 10.1.3.0.0 Started
+07/05/09 11:19:00.375 JSP-EtiquetasPropias-webapp: 10.1.3.0.0 Started
+07/05/09 11:29:53.183 JSP-EtiquetasPropias-webapp: 10.1.3.0.0 Stopped
+07/05/09 11:29:53.584 10.1.3.0.0 Started
+07/05/09 11:29:55.887 JSP-EtiquetasPropias-webapp: 10.1.3.0.0 Started
+07/05/09 11:31:43.292 10.1.3.0.0 Started
+07/05/09 11:31:45.715 JSP-EtiquetasPropias-webapp: 10.1.3.0.0 Started
+07/05/09 11:33:27.472 JSP-EtiquetasPropias-webapp: 10.1.3.0.0 Stopped
+07/05/09 11:33:27.972 10.1.3.0.0 Started
+07/05/09 11:33:30.286 JSP-EtiquetasPropias-webapp: 10.1.3.0.0 Started
+07/05/09 12:03:29.282 10.1.3.0.0 Started
+07/05/09 12:03:31.716 JSP-TablaMejorada-webapp: 10.1.3.0.0 Started
+07/05/09 12:03:49.512 JSP-TablaMejorada-webapp: Servlet error
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:415)
+	at java.lang.Integer.parseInt(Integer.java:497)
+	at tablamejorada.s1.doPost(s1.java:38)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:763)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:856)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:719)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:376)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.doProcessRequest(HttpRequestHandler.java:870)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.processRequest(HttpRequestHandler.java:451)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.serveOneRequest(HttpRequestHandler.java:218)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:119)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:112)
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run(ServerSocketReadHandler.java:260)
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.0.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:595)
+07/05/09 12:04:48.296 JSP-TablaMejorada-webapp: 10.1.3.0.0 Stopped
+07/05/09 12:04:48.777 10.1.3.0.0 Started
+07/05/09 12:04:50.970 JSP-TablaMejorada-webapp: 10.1.3.0.0 Started
+07/05/09 12:06:57.382 JSP-TablaMejorada-webapp: 10.1.3.0.0 Stopped
+07/05/09 12:06:57.662 10.1.3.0.0 Started
+07/05/09 12:07:00.126 JSP-TablaMejorada-webapp: 10.1.3.0.0 Started
+07/05/09 12:08:11.428 JSP-TablaMejorada-webapp: 10.1.3.0.0 Stopped
+07/05/09 12:08:11.909 10.1.3.0.0 Started
+07/05/09 12:08:14.302 JSP-TablaMejorada-webapp: 10.1.3.0.0 Started
+07/05/09 12:08:50.635 JSP-TablaMejorada-webapp: 10.1.3.0.0 Stopped
+07/05/09 12:08:51.205 10.1.3.0.0 Started
+07/05/09 12:08:53.799 JSP-TablaMejorada-webapp: 10.1.3.0.0 Started
+07/05/09 12:44:43.467 JSP-TablaMejorada-webapp: 10.1.3.0.0 Stopped
+07/05/09 12:44:44.308 10.1.3.0.0 Started
+07/05/09 12:44:47.72 JSP-TablaMejorada-webapp: 10.1.3.0.0 Started

@@ -1,0 +1,367 @@
+<html xmlns:j2ee="http://java.sun.com/xml/ns/j2ee" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>panelGroup
+          (ICEfaces Custom Components)
+        </title>
+<meta name="keywords" content="$title">
+<link rel="stylesheet" type="text/css" href="../stylesheet.css" title="Style">
+</head>
+<script>
+            function asd()
+            {
+            parent.document.title="panelGroup (ICEfaces Custom Components)";
+            }
+          </script>
+<body bgcolor="white" onload="asd();">
+<a name="navbar_top"></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td COLSPAN="3" BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><a NAME="navbar_top_firstrow"></a>
+<table BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<tr ALIGN="center" VALIGN="top">
+<td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="tld-summary.html"><font CLASS="NavBarFont1"><b>Library</b></font></a>&nbsp;</td><td BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Tag&nbsp;</font>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ALIGN="right" VALIGN="top" ROWSPAN="3"><em></em></td>
+</tr>
+<tr>
+<td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2"></font></td><td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2">
+                &nbsp;<a HREF="../index.html" TARGET="_top"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a href="panelGroup.html" target="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a HREF="../alltags-noframe.html" TARGET=""><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<h2>
+<font size="-1">ICEfaces Component Suite</font>
+<br>
+            Tag panelGroup</h2>
+<hr>
+      <p>The panelGroup component is intended for use in situations when only one UIComponent child can
+          be nested, such as in the case of facets. The panelGroup component renders a "div" element around it's child
+          components, outputting the value of the "style" attribute as the value of the "style" attribute, and the
+          value of the "styleClass" attribute as the value of the "class" attribute. </p>
+          <p>The panelGroup can also provide Drag & Drop functionality to it's child components. See the Drag & Drop
+          documentation details.</p>
+          <p>The panelGroup component can also be used to apply a single Effect (Fade, Show, etc.) to a set of
+          child-components by adding the components to the panelGroup and specifying the effect on the panelGroup
+          "effect" attribute.</p>
+          <b>Note:</b> The "position" property of the container div must need to be set to the "relative", if its "overflow" 
+          property of the css is set to "auto" or "scroll" and all the draggable panelGroups inside the container div
+          must be using the dragOptions="dragGhost".          
+    <br>
+<p></p>
+<hr>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="2"><font size="+2"><b>Tag Information</b></font></td>
+</tr>
+<tr>
+<td>Tag Class</td><td>com.icesoft.faces.component.PanelGroupTag</td>
+</tr>
+<tr>
+<td>TagExtraInfo Class</td><td><i>None</i></td>
+</tr>
+<tr>
+<td>Body Content</td><td>JSP</td>
+</tr>
+<tr>
+<td>Display Name</td><td><i>None</i></td>
+</tr>
+</table>
+<br>
+<p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="5"><font size="+2"><b>Attributes</b></font></td>
+</tr>
+<tr>
+<td><b>Name</b></td><td><b>Required</b></td><td><b>Request-time</b></td><td><b>Type</b></td><td><b>Description</b></td>
+</tr>
+<tr valign="top">
+<td>binding</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        The value binding expression linking this component to a property in a backing bean
+      </td>
+</tr>
+<tr valign="top">
+<td>contextValue</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		A means of uniquely identifying this component, from the 
+		data model's perspective. For example, if this were on a 
+		dataTable's cell, then it would encapsulate some means of 
+		identifying the row and the column.
+      </td>
+</tr>
+<tr valign="top">
+<td>dragListener</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		The dragListener specifies a method on a backing bean that will
+		accept DnDEvents. This value must be a method binding
+		expression.
+      </td>
+</tr>
+<tr valign="top">
+<td>dragMask</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		Drag mask is used to prevent drag events from propagating to the
+		server. For example if your backing bean is not interested in
+		HOVER_START events then adding hover_start to the mask will stop
+		the event from being sent. Multiple values are specified in a
+		comma separated list. Possible values are. dragging,
+		drag_cancel,dropped,hover_start,hover_end
+      </td>
+</tr>
+<tr valign="top">
+<td>dragOptions</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		Optional effects for draggable panels. List in a coma seperated
+		string. (revert,ghosting,solid) revert - When a draggable is
+		dropped the draggable will move back to it's starting position.
+		ghosting - When a draggable is dragged a ghost copy is left in
+		the original position. solid - Do not make transparent when
+		dragging.
+      </td>
+</tr>
+<tr valign="top">
+<td>dragValue</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		The drop value of this panel, for use in DnDEvents. This value
+		can be a string or a value binding expression.
+      </td>
+</tr>
+<tr valign="top">
+<td>draggable</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		When set to 'true' this panel is draggable. The user will be
+		able to drag the panel to any position on the page. Note: all
+		Draggable panels must be contained in a form.
+      </td>
+</tr>
+<tr valign="top">
+<td>dropListener</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		The dropListener specifies a method on a backing bean that will
+		accept DnDEvents. This value must be a method binding
+		expression. This method will be called when a droppable is
+		dropped or hovered on this panel unless masked.
+      </td>
+</tr>
+<tr valign="top">
+<td>dropMask</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		Drop mask is used to prevent drop events from propagating to the
+		server. For example if your backing bean is not interested in
+		HOVER_START events then adding hover_start to the mask will stop
+		the event from being sent. Multiple values are specified in a
+		comma separated list. Possible values are. dropped,hover_start
+      </td>
+</tr>
+<tr valign="top">
+<td>dropTarget</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		When set to true this panel is a dropTarget for draggable
+		panels. Drop targets detect when a draggable has been dropped on
+		a specific region of the page. Note: all Drop Target panels must
+		be contained in a form.
+      </td>
+</tr>
+<tr valign="top">
+<td>dropValue</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		The drop value of this panel, for use in DnDEvents. This value can 
+		be a string or a value binding expression. 
+      </td>
+</tr>
+<tr valign="top">
+<td>effect</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        The Javascript Effect
+      </td>
+</tr>
+<tr valign="top">
+<td>hoverclass</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+    Hover class
+      </td>
+</tr>
+<tr valign="top">
+<td>id</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+  			The component identifier for this component. This value must be 
+  			unique within the closest parent component that is a naming 
+  			container.
+      </td>
+</tr>
+<tr valign="top">
+<td>menuPopup</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		Specify the id of the menuPopup which should show when the 
+        user context-clicks on this component.
+      </td>
+</tr>
+<tr valign="top">
+<td>onclickeffect</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        Effect invoked on onclick event
+      </td>
+</tr>
+<tr valign="top">
+<td>ondblclickeffect</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        Effect invoked on ondblclick event
+      </td>
+</tr>
+<tr valign="top">
+<td>onkeydowneffect</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        Effect invoked on onkeydown event
+      </td>
+</tr>
+<tr valign="top">
+<td>onkeypresseffect</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        Effect invoked on onkeypress event
+      </td>
+</tr>
+<tr valign="top">
+<td>onkeyupeffect</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        Effect invoked on onkeyup event
+      </td>
+</tr>
+<tr valign="top">
+<td>onmousedowneffect</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        Effect invoked on onmousedown event
+      </td>
+</tr>
+<tr valign="top">
+<td>onmousemoveeffect</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        Effect invoked on onmousemove event
+      </td>
+</tr>
+<tr valign="top">
+<td>onmouseouteffect</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        Effect invoked on onmouse event
+      </td>
+</tr>
+<tr valign="top">
+<td>onmouseovereffect</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        Effect invoked on onmouseover event
+      </td>
+</tr>
+<tr valign="top">
+<td>onmouseupeffect</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        Effect invoked on onmouseup event
+      </td>
+</tr>
+<tr valign="top">
+<td>panelTooltip</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+    Hover class
+      </td>
+</tr>
+<tr valign="top">
+<td>rendered</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+  			Flag indicating whether or not this component should be rendered 
+  			(during Render Response Phase), or processed on any subsequent form 
+  			submit.
+      </td>
+</tr>
+<tr valign="top">
+<td>renderedOnUserRole</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+
+		If user is in given role, this component will be rendered
+		normally. If not, nothing is rendered and the body of this tag
+		will be skipped.
+      </td>
+</tr>
+<tr valign="top">
+<td>renderedStyle</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+      </td>
+</tr>
+<tr valign="top">
+<td>scrollHeight</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        Height for scrollable panel. You must need to define the measurement unit without any space (e.g.) <br/>
+        &lt;ice:panelGroup scrollHeight="50em" &gt; <br/> or <br/>
+        &lt;ice:panelGroup scrollHeight="50px" &gt; <br/>
+      </td>
+</tr>
+<tr valign="top">
+<td>scrollWidth</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        Width for scrollable panel. You must need to define the measurement unit without any space (e.g.) <br/>
+        &lt;ice:panelGroup scrollWidth="50em" &gt; <br/> or <br/>
+        &lt;ice:panelGroup scrollWidth="50px" &gt; <br/>
+      </td>
+</tr>
+<tr valign="top">
+<td>style</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+          CSS style(s) to be applied when this component is rendered.
+      </td>
+</tr>
+<tr valign="top">
+<td>styleClass</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        Space-separated list of CSS style class(es) to be applied when this 
+		element is rendered. This value is passed through as the "class" 
+		attribute on generated markup.
+		The base name for all style classes. Default value is <b>icePnlGrp</b>.
+      </td>
+</tr>
+<tr valign="top">
+<td>visible</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		Set the visibility of this component. When false CSS style is
+		set to display:none
+      </td>
+</tr>
+</table>
+<br>
+<p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="5"><font size="+2"><b>Variables</b></font></td>
+</tr>
+<td colspan="2"><i>No Variables Defined.</i></td>
+</table>
+<br>
+<p></p>
+<a name="navbar_bottom"></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td COLSPAN="3" BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><a NAME="navbar_bottom_firstrow"></a>
+<table BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<tr ALIGN="center" VALIGN="top">
+<td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="tld-summary.html"><font CLASS="NavBarFont1"><b>Library</b></font></a>&nbsp;</td><td BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Tag&nbsp;</font>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ALIGN="right" VALIGN="top" ROWSPAN="3"><em></em></td>
+</tr>
+<tr>
+<td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2"></font></td><td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2">
+                &nbsp;<a HREF="../index.html" TARGET="_top"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a href="panelGroup.html" target="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a HREF="../alltags-noframe.html" TARGET=""><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<small><i>
+            Output Generated by 
+            <a href="http://taglibrarydoc.dev.java.net/" target="_blank">Tag Library Documentation Generator</a>.
+            Java, JSP, and JavaServer Pages are trademarks or 
+            registered trademarks of Sun Microsystems, Inc. in the US and other
+            countries.  Copyright 2002-4 Sun Microsystems, Inc.
+            4150 Network Circle
+            Santa Clara, CA 95054, U.S.A.
+            All Rights Reserved. 
+            </i></small>
+</body>
+</html>

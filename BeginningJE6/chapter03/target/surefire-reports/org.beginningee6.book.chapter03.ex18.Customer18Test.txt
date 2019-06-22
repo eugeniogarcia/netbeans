@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.beginningee6.book.chapter03.ex18.Customer18Test
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.141 sec

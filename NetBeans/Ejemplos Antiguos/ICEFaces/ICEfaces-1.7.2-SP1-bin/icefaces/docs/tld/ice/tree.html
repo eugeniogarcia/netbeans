@@ -1,0 +1,287 @@
+<html xmlns:j2ee="http://java.sun.com/xml/ns/j2ee" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>tree
+          (ICEfaces Custom Components)
+        </title>
+<meta name="keywords" content="$title">
+<link rel="stylesheet" type="text/css" href="../stylesheet.css" title="Style">
+</head>
+<script>
+            function asd()
+            {
+            parent.document.title="tree (ICEfaces Custom Components)";
+            }
+          </script>
+<body bgcolor="white" onload="asd();">
+<a name="navbar_top"></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td COLSPAN="3" BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><a NAME="navbar_top_firstrow"></a>
+<table BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<tr ALIGN="center" VALIGN="top">
+<td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="tld-summary.html"><font CLASS="NavBarFont1"><b>Library</b></font></a>&nbsp;</td><td BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Tag&nbsp;</font>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ALIGN="right" VALIGN="top" ROWSPAN="3"><em></em></td>
+</tr>
+<tr>
+<td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2"></font></td><td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2">
+                &nbsp;<a HREF="../index.html" TARGET="_top"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a href="tree.html" target="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a HREF="../alltags-noframe.html" TARGET=""><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<h2>
+<font size="-1">ICEfaces Component Suite</font>
+<br>
+            Tag tree</h2>
+<hr>
+      <p>The tree component displays hierarchical data as a "tree" of branches  and leaf nodes.
+            Optionally, the tree may also display navigation controls for the dynamic expansion
+            and collapse of branch nodes. Tree navigation events are available so that an application 
+            can respond to these events. Nodes may also support an action event that can be used to respond
+            to user click events. <br>
+            The tree component can be used in cases where a hierarchical data structure must be viewed
+            and navigated. It is typically used for menu-style applications, where the user selects
+            a tree node and the application responds with an action related to the selected node.<br>
+            In implementing a tree tag, the application developer must provide declare in the JSP a tree tag and 
+            a single treeNode tag as a child of the tree tag. The tree tag should declare the "value" attribute
+            to be a value binding to a backing bean that will return an object that implements the 
+            javax.swing.tree.TreeModel interface. The TreeModel must contain a tree of DefaultMutableTreeNode instances.
+            Each DefaultMutableTreeNode instance encapsultes an IceUserObject. The IceUserObject is the extension point
+            for the application developer. If the IceUserObject does not provide sufficient state for representation
+            of the tree's nodes, then the application developer should extend the IceUserObject and add state as required 
+            to their extension. When creating an IceUserObject, the DefaultMutableTreeNode wrapper must
+            be provided to the constructor. Then the node's state can be set to the attributes on the IceUserObject including:
+            text, a convenience field that will typically represent the text that will be displayed somewhere 
+            in the content facet; expanded, whether the node is expanded on its first rendering and until the 
+            user initiates a navigation event to change this value; tooltip, the text that will appear in the 
+            tooltip that appears when the user hovers over a node; leafIcon, the application-relative path to 
+            an image that will be used to represent this node when it has no children (is a leaf),
+            typically referred to in the icon facet; branchExpandedIcon, the application-relative path to 
+            an image that will be used to represent this node when it has children (is a branch) and is expanded,
+            typically referred to in the icon facet; branchContractedIcon, the application-relative path to 
+            an image that will be used to represent this node when it has children (is a branch) and is not expanded,
+            typically referred to in the icon facet. The "binding" attribute can be defined so that the 
+            application developer will have access to the Tree component in the application's backing bean.
+            The "var" attribute can be declared on the tree tag such that the treeNode tag's children have 
+            access to the state of the TreeModel's node that it represents.<br>
+            See the documentation for the treeNode tag for a description of supported facets.
+    <br>
+<p></p>
+<hr>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="2"><font size="+2"><b>Tag Information</b></font></td>
+</tr>
+<tr>
+<td>Tag Class</td><td>com.icesoft.faces.component.tree.TreeTag</td>
+</tr>
+<tr>
+<td>TagExtraInfo Class</td><td><i>None</i></td>
+</tr>
+<tr>
+<td>Body Content</td><td>JSP</td>
+</tr>
+<tr>
+<td>Display Name</td><td><i>None</i></td>
+</tr>
+</table>
+<br>
+<p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="5"><font size="+2"><b>Attributes</b></font></td>
+</tr>
+<tr>
+<td><b>Name</b></td><td><b>Required</b></td><td><b>Request-time</b></td><td><b>Type</b></td><td><b>Description</b></td>
+</tr>
+<tr valign="top">
+<td>action</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		MethodBinding representing the application action to invoke when
+		this component is activated by the user. The expression must
+		evaluate to a either a String or a public method that takes no
+		parameters, and returns a String (the logical outcome) which is
+		passed to the NavigationHandler for this application.
+      </td>
+</tr>
+<tr valign="top">
+<td>actionListener</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		MethodBinding representing an action listener method that will be 
+		notified when this component is activated by the user. The expression 
+		must evaluate to a public method that takes an ActionEvent parameter, 
+		with a return type of void. 
+      </td>
+</tr>
+<tr valign="top">
+<td>binding</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        The value binding expression linking this component to a property in a backing bean
+      </td>
+</tr>
+<tr valign="top">
+<td>documentImage</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+      </td>
+</tr>
+<tr valign="top">
+<td>folderImage</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+      </td>
+</tr>
+<tr valign="top">
+<td>folderOpenImage</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+      </td>
+</tr>
+<tr valign="top">
+<td>hideNavigation</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        Declares whether the navigation links will be rendered. Valid
+        values are true and false.
+      </td>
+</tr>
+<tr valign="top">
+<td>hideRootNode</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        Declares whether the root tree node will be rendered. Valid
+        values are true and false.
+      </td>
+</tr>
+<tr valign="top">
+<td>id</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+  			The component identifier for this component. This value must be 
+  			unique within the closest parent component that is a naming 
+  			container.
+      </td>
+</tr>
+<tr valign="top">
+<td>imageDir</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        Set directory for location of the tree images.
+      </td>
+</tr>
+<tr valign="top">
+<td>immediate</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+
+		Flag indicating that this component's value must be converted
+		and validated immediately (that is, during Apply Request Values
+		phase), rather than waiting until Process Validations phase.
+      </td>
+</tr>
+<tr valign="top">
+<td>navCloseTop</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td><i>No Description</i></td>
+</tr>
+<tr valign="top">
+<td>navOpenTop</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        Name of the image that overrides the default image.
+      </td>
+</tr>
+<tr valign="top">
+<td>navOpenTopNoSiblings</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        Name of the image that overrides the default image.
+      </td>
+</tr>
+<tr valign="top">
+<td>rendered</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+  			Flag indicating whether or not this component should be rendered 
+  			(during Render Response Phase), or processed on any subsequent form 
+  			submit.
+      </td>
+</tr>
+<tr valign="top">
+<td>style</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+		CSS style(s) to be applied when this component is rendered.
+      </td>
+</tr>
+<tr valign="top">
+<td>styleClass</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        <p>
+		Space-separated list of CSS style class(es) to be applied when this 
+		element is rendered. This value must be passed through as the "class" 
+		attribute on generated markup.
+		</p>
+        <p>Defines the base class name for all style classes.
+        Default value is <b>iceTree</b></p>
+              </p><ul>
+                <li>iceTree</li>
+                <li>iceTreeRow</li>
+              </ul>              
+      </td>
+</tr>
+<tr valign="top">
+<td>value</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        Sets the component's model value, which must be a JSF value binding expression 
+        to an implementation of the "javax.swing.tree.TreeModel" interface.
+      </td>
+</tr>
+<tr valign="top">
+<td>var</td><td>false</td><td>false</td><td><code>java.lang.String</code></td><td>
+        
+        Name of a request-scope attribute under which the model data for
+        the row selected by the current value of the "rowIndex" property
+        (i.e. also the current value of the "rowData" property) will be
+        exposed.
+      </td>
+</tr>
+</table>
+<br>
+<p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="5"><font size="+2"><b>Variables</b></font></td>
+</tr>
+<td colspan="2"><i>No Variables Defined.</i></td>
+</table>
+<br>
+<p></p>
+<a name="navbar_bottom"></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td COLSPAN="3" BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><a NAME="navbar_bottom_firstrow"></a>
+<table BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<tr ALIGN="center" VALIGN="top">
+<td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="tld-summary.html"><font CLASS="NavBarFont1"><b>Library</b></font></a>&nbsp;</td><td BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Tag&nbsp;</font>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ALIGN="right" VALIGN="top" ROWSPAN="3"><em></em></td>
+</tr>
+<tr>
+<td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2"></font></td><td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2">
+                &nbsp;<a HREF="../index.html" TARGET="_top"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a href="tree.html" target="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a HREF="../alltags-noframe.html" TARGET=""><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<small><i>
+            Output Generated by 
+            <a href="http://taglibrarydoc.dev.java.net/" target="_blank">Tag Library Documentation Generator</a>.
+            Java, JSP, and JavaServer Pages are trademarks or 
+            registered trademarks of Sun Microsystems, Inc. in the US and other
+            countries.  Copyright 2002-4 Sun Microsystems, Inc.
+            4150 Network Circle
+            Santa Clara, CA 95054, U.S.A.
+            All Rights Reserved. 
+            </i></small>
+</body>
+</html>
